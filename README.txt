@@ -1,15 +1,9 @@
-Farm จีน 干嘛？ v3.0 PRACTICAL VOCABULARY STARTER
+Farm จีน 干嘛？ Public Beta v3.1 — honest status
 
-index.html - Updated website, existing 5 modules and bubble interaction preserved, starter master entries bundled in HTML.
-practical-vocabulary.html - Browse new curated practical vocabulary with search and topic/level filters.
-master-vocabulary.json - Combined master data, 292 unique records, 127 newly added entries, 15 existing records enriched.
-practical-vocabulary.csv - New practical vocabulary set, 142 curated terms (includes existing overlaps).
+index.html = retained v3.0 UI and 5 modules, now links to public vocabulary library.
+vocabulary-library.html = searchable public-oriented HSK 1–6 catalog with Beginner/Intermediate/Advanced tabs. Downloads attested HSK wordlists from MIT licensed project at runtime. Chinese+pinyin+English metadata for all imported records; Thai displayed when curated, other words explicitly marked awaiting Thai.
+curated-vocabulary.json = general-purpose vocabulary in bundled prior project, may require Thai/editorial review.
 
-IMPORTANT LIMITATIONS:
-- These are editorial practical terms, not the complete HSK 1-6 vocabulary. HSK membership is deliberately not guessed.
-- Chinese/Thai/Pinyin entries are curated drafts needing a second-language review before paid lessons.
-- Example sentences exist only where written; other records have no example, rather than fake filler.
-- Relationship expansion is literal-string matching, not semantic meaning or historic etymology.
-- Breakdown decompositions were NOT generated for these new words.
-- The website may still fetch the larger HSK dataset online, whose missing Thai translations/examples remain missing.
-- Original graph/UI remains; other core limitations are unchanged.
+IMPORTANT: No claim of 3,000 Thai-complete teaching entries. Online source required for 3,000+ records. Offline fallback has smaller local set. Books supplied by user guide the pedagogical design and are NOT republished.
+
+MIT source: https://github.com/drkameleon/complete-hsk-vocabulary (LICENSE and README on source). Retain attribution.
