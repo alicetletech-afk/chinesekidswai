@@ -1,0 +1,18 @@
+{
+  "product": "Farm จีน 干嘛？",
+  "version": "v27-data-first",
+  "source_of_offline_entries": "Existing v20/v26 project lexicon",
+  "offline_entries": 165,
+  "entries_with_thai": 165,
+  "entries_with_examples_zh_th": 148,
+  "entries_with_example_pinyin": 0,
+  "all_legacy_records_need_review": true,
+  "hsk_online_source": "https://github.com/drkameleon/complete-hsk-vocabulary",
+  "hsk_data_license": "MIT for upstream repository. Retain its license attribution.",
+  "limitations": [
+    "Full external HSK corpus not bundled offline",
+    "Thai meanings and examples absent from upstream HSK dataset",
+    "Character breakdown only for confirmed small legacy set",
+    "HSK level mapping awaits review of source standard"
+  ]
+}

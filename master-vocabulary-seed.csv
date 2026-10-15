@@ -1,0 +1,166 @@
+﻿simplified,pinyin,thai,english,kind,farm_level,hsk_reference,example_zh,example_pinyin,example_th,components,relationships,data_provenance,verification
+口,kǒu,ปาก,,component,Beginner,,请张开口。,,กรุณาอ้าปาก,[],"{""component_to_character"": [""吃"", ""喝"", ""叫"", ""吗"", ""唱"", ""听""]}",legacy-v20-curated,needs_linguistic_review
+木,mù,ไม้,,component,Beginner,,这里有很多树木。,,ที่นี่มีต้นไม้มากมาย,[],"{""component_to_character"": [""林"", ""森"", ""休""]}",legacy-v20-curated,needs_linguistic_review
+女,nǚ,ผู้หญิง,,component,Beginner,,她是女生。,,เธอเป็นผู้หญิง,[],"{""component_to_character"": [""好"", ""妈"", ""她""]}",legacy-v20-curated,needs_linguistic_review
+亻,rén,ส่วนประกอบที่หมายถึงคน,,component,Beginner,,你是学生吗？,,คุณเป็นนักเรียนไหม,[],"{""component_to_character"": [""你"", ""他"", ""们"", ""住"", ""休""]}",legacy-v20-curated,needs_linguistic_review
+氵,shuǐ,ส่วนประกอบเกี่ยวกับน้ำ,,component,Beginner,,我喜欢喝水。,,ฉันชอบดื่มน้ำ,[],"{""component_to_character"": [""洗"", ""河"", ""海"", ""活"", ""没""]}",legacy-v20-curated,needs_linguistic_review
+日,rì,ดวงอาทิตย์ / วัน,,component,Beginner,,今天是星期日。,,วันนี้เป็นวันอาทิตย์,[],"{""component_to_character"": [""明"", ""时"", ""晚""]}",legacy-v20-curated,needs_linguistic_review
+心,xīn,หัวใจ / ใจ,,component,Beginner,,我很开心。,,ฉันมีความสุข,[],"{""component_to_character"": [""想"", ""忙"", ""情"", ""息""], ""character_to_word"": [""开心"", ""心情""], ""word_expansion"": [""心情""]}",legacy-v20-curated,needs_linguistic_review
+讠,yán,ส่วนประกอบเกี่ยวกับคำพูด,,component,Beginner,,请说中文。,,กรุณาพูดภาษาจีน,[],"{""component_to_character"": [""请"", ""说"", ""语"", ""话""]}",legacy-v20-curated,needs_linguistic_review
+扌,shǒu,ส่วนประกอบเกี่ยวกับมือ,,component,Beginner,,我在打字。,,ฉันกำลังพิมพ์,[],"{""component_to_character"": [""打"", ""找"", ""提""]}",legacy-v20-curated,needs_linguistic_review
+艹,cǎo,ส่วนประกอบเกี่ยวกับพืช,,component,Beginner,,花很漂亮。,,ดอกไม้สวยมาก,[],"{""component_to_character"": [""花"", ""茶"", ""药""]}",legacy-v20-curated,needs_linguistic_review
+吃,chī,กิน,,char,Beginner,,我喜欢吃米饭。,,ฉันชอบกินข้าว,"[""口""]",{},legacy-v20-curated,needs_linguistic_review
+喝,hē,ดื่ม,,char,Beginner,,我喝水。,,ฉันดื่มน้ำ,"[""口""]","{""character_to_word"": [""喝水"", ""喝茶""], ""word_expansion"": [""喝水"", ""喝茶""]}",legacy-v20-curated,needs_linguistic_review
+叫,jiào,ชื่อว่า / เรียก,,char,Beginner,,我叫小明。,,ฉันชื่อเสี่ยวหมิง,"[""口""]",{},legacy-v20-curated,needs_linguistic_review
+吗,ma,ไหม (คำลงท้ายคำถาม),,char,Beginner,,你好吗？,,คุณสบายดีไหม,[],{},legacy-v20-curated,needs_linguistic_review
+唱,chàng,ร้องเพลง,,char,Beginner,,她喜欢唱歌。,,เธอชอบร้องเพลง,"[""口""]","{""character_to_word"": [""唱歌""], ""word_expansion"": [""唱歌""]}",legacy-v20-curated,needs_linguistic_review
+听,tīng,ฟัง,,char,Beginner,,我听音乐。,,ฉันฟังเพลง,[],{},legacy-v20-curated,needs_linguistic_review
+林,lín,กลุ่มต้นไม้ / ป่า,,char,Beginner,,这里有一片树林。,,ที่นี่มีป่าแห่งหนึ่ง,[],"{""character_to_word"": [""森林""]}",legacy-v20-curated,needs_linguistic_review
+森,sēn,หนาแน่น (ใช้ในคำว่า 森林),,char,Intermediate,,森林里有很多树。,,ในป่ามีต้นไม้มากมาย,[],"{""character_to_word"": [""森林""], ""word_expansion"": [""森林""]}",legacy-v20-curated,needs_linguistic_review
+好,hǎo,ดี,,char,Beginner,,你好！,,สวัสดี,[],{},legacy-v20-curated,needs_linguistic_review
+妈,mā,แม่,,char,Beginner,,我妈妈很好。,,แม่ของฉันสบายดี,[],{},legacy-v20-curated,needs_linguistic_review
+她,tā,เธอ (ผู้หญิง),,char,Beginner,,她是老师。,,เธอเป็นครู,[],{},legacy-v20-curated,needs_linguistic_review
+你,nǐ,คุณ / เธอ,,char,Beginner,,你好吗？,,คุณสบายดีไหม,[],"{""character_to_word"": [""你好"", ""你们"", ""你好吗？""], ""word_expansion"": [""你好"", ""你们""]}",legacy-v20-curated,needs_linguistic_review
+他,tā,เขา (ผู้ชาย),,char,Beginner,,他是我的朋友。,,เขาเป็นเพื่อนของฉัน,[],"{""character_to_word"": [""他们""]}",legacy-v20-curated,needs_linguistic_review
+们,men,ส่วนประกอบบอกพหูพจน์ของสรรพนาม,,char,Beginner,,我们一起学习。,,พวกเราเรียนด้วยกัน,[],"{""character_to_word"": [""你们"", ""我们"", ""他们""]}",legacy-v20-curated,needs_linguistic_review
+住,zhù,อาศัยอยู่,,char,Beginner,,我住在曼谷。,,ฉันอาศัยอยู่กรุงเทพฯ,[],{},legacy-v20-curated,needs_linguistic_review
+休,xiū,พัก,,char,Beginner,,我要休息。,,ฉันจะพัก,[],"{""character_to_word"": [""休息""]}",legacy-v20-curated,needs_linguistic_review
+洗,xǐ,ล้าง / ซัก,,char,Beginner,,我要洗手。,,ฉันจะล้างมือ,"[""氵""]",{},legacy-v20-curated,needs_linguistic_review
+河,hé,แม่น้ำ,,char,Intermediate,,这条河很长。,,แม่น้ำสายนี้ยาวมาก,"[""氵""]",{},legacy-v20-curated,needs_linguistic_review
+海,hǎi,ทะเล,,char,Intermediate,,我喜欢大海。,,ฉันชอบทะเล,"[""氵""]",{},legacy-v20-curated,needs_linguistic_review
+活,huó,มีชีวิต / ดำรงอยู่,,char,Intermediate,,生活很有趣。,,ชีวิตน่าสนใจ,[],{},legacy-v20-curated,needs_linguistic_review
+明,míng,สว่าง / ชัดเจน,,char,Beginner,,明天见！,,เจอกันพรุ่งนี้,"[""月""]","{""character_to_word"": [""明天""]}",legacy-v20-curated,needs_linguistic_review
+时,shí,เวลา,,char,Beginner,,现在是什么时间？,,ตอนนี้เวลาอะไร,[],"{""character_to_word"": [""时间""]}",legacy-v20-curated,needs_linguistic_review
+晚,wǎn,เย็น / ค่ำ,,char,Beginner,,晚上好。,,สวัสดีตอนเย็น,[],{},legacy-v20-curated,needs_linguistic_review
+想,xiǎng,คิด / อยาก,,char,Beginner,,我想喝茶。,,ฉันอยากดื่มชา,"[""心""]",{},legacy-v20-curated,needs_linguistic_review
+忙,máng,ยุ่ง,,char,Beginner,,我今天很忙。,,วันนี้ฉันยุ่งมาก,[],{},legacy-v20-curated,needs_linguistic_review
+情,qíng,ความรู้สึก / สภาพ,,char,Intermediate,,他心情很好。,,เขาอารมณ์ดี,[],{},legacy-v20-curated,needs_linguistic_review
+请,qǐng,กรุณา / เชิญ,,char,Beginner,,请进。,,เชิญเข้ามา,[],"{""character_to_word"": [""请问""]}",legacy-v20-curated,needs_linguistic_review
+说,shuō,พูด,,char,Beginner,,我会说中文。,,ฉันพูดภาษาจีนได้,[],"{""character_to_word"": [""说中文"", ""说话""], ""word_expansion"": [""说中文"", ""说话""]}",legacy-v20-curated,needs_linguistic_review
+语,yǔ,ภาษา,,char,Intermediate,,我在学外语。,,ฉันกำลังเรียนภาษาต่างประเทศ,[],{},legacy-v20-curated,needs_linguistic_review
+话,huà,คำพูด / เรื่องที่พูด,,char,Beginner,,我想和你说话。,,ฉันอยากคุยกับคุณ,[],"{""character_to_word"": [""电话"", ""说话"", ""普通话""]}",legacy-v20-curated,needs_linguistic_review
+打,dǎ,ตี / โทร / ทำกิจกรรมบางอย่าง,,char,Beginner,,我打电话给你。,,ฉันโทรหาคุณ,[],"{""character_to_word"": [""打电话""], ""word_expansion"": [""打电话""]}",legacy-v20-curated,needs_linguistic_review
+找,zhǎo,หา / ค้นหา,,char,Beginner,,我在找手机。,,ฉันกำลังหาโทรศัพท์,[],{},legacy-v20-curated,needs_linguistic_review
+提,tí,ยก / เสนอ,,char,Intermediate,,请提出问题。,,กรุณาเสนอคำถาม,[],{},legacy-v20-curated,needs_linguistic_review
+花,huā,ดอกไม้ / ใช้จ่าย,,char,Beginner,,这朵花很漂亮。,,ดอกไม้นี้สวยมาก,[],{},legacy-v20-curated,needs_linguistic_review
+茶,chá,ชา,,char,Beginner,,我喜欢喝茶。,,ฉันชอบดื่มชา,[],"{""character_to_word"": [""喝茶""]}",legacy-v20-curated,needs_linguistic_review
+药,yào,ยา,,char,Intermediate,,请按时吃药。,,กรุณากินยาให้ตรงเวลา,[],{},legacy-v20-curated,needs_linguistic_review
+手,shǒu,มือ,,char,Beginner,,请洗手。,,กรุณาล้างมือ,[],"{""character_to_word"": [""手机"", ""手机壳""], ""word_expansion"": [""手机""]}",legacy-v20-curated,needs_linguistic_review
+机,jī,เครื่องจักร / เครื่อง,,char,Beginner,,我的手机在这里。,,โทรศัพท์ฉันอยู่ที่นี่,[],"{""character_to_word"": [""手机""]}",legacy-v20-curated,needs_linguistic_review
+电,diàn,ไฟฟ้า,,char,Beginner,,电脑很好用。,,คอมพิวเตอร์ใช้ง่าย,[],"{""character_to_word"": [""电话"", ""电脑""], ""word_expansion"": [""电话"", ""电脑""]}",legacy-v20-curated,needs_linguistic_review
+脑,nǎo,สมอง,,char,Intermediate,,多动动脑。,,ลองใช้สมองคิดให้มากขึ้น,[],"{""character_to_word"": [""电脑""]}",legacy-v20-curated,needs_linguistic_review
+朋,péng,มิตร (ใช้ใน 朋友),,char,Beginner,,朋友来了。,,เพื่อนมาแล้ว,"[""月""]","{""character_to_word"": [""朋友""], ""word_expansion"": [""朋友""]}",legacy-v20-curated,needs_linguistic_review
+友,yǒu,มิตร / เพื่อน,,char,Beginner,,我们很友好。,,พวกเราเป็นมิตรกัน,[],"{""character_to_word"": [""朋友""]}",legacy-v20-curated,needs_linguistic_review
+是,shì,เป็น / คือ / ใช่,,char,Beginner,,我是学生。,,ฉันเป็นนักเรียน,[],{},legacy-v20-curated,needs_linguistic_review
+事,shì,เรื่อง / เหตุการณ์,,char,Beginner,,有什么事？,,มีเรื่องอะไร,[],{},legacy-v20-curated,needs_linguistic_review
+市,shì,เมือง / ตลาด,,char,Intermediate,,我去市中心。,,ฉันไปใจกลางเมือง,[],"{""character_to_word"": [""市场""]}",legacy-v20-curated,needs_linguistic_review
+试,shì,ลอง / ทดลอง,,char,Intermediate,,你可以试试。,,คุณลองดูได้,[],{},legacy-v20-curated,needs_linguistic_review
+室,shì,ห้อง,,char,Intermediate,,这是教室。,,นี่คือห้องเรียน,[],{},legacy-v20-curated,needs_linguistic_review
+视,shì,มอง / ดู,,char,Intermediate,,我在看电视。,,ฉันกำลังดูโทรทัศน์,[],{},legacy-v20-curated,needs_linguistic_review
+十,shí,สิบ,,char,Beginner,,十个人。,,สิบคน,[],{},legacy-v20-curated,needs_linguistic_review
+石,shí,หิน,,char,Intermediate,,这里有一块石头。,,ที่นี่มีหินก้อนหนึ่ง,[],{},legacy-v20-curated,needs_linguistic_review
+碰,pèng,สัมผัส / ชน,,char,Intermediate,,别碰！,,อย่าแตะ,[],{},legacy-v20-curated,needs_linguistic_review
+我,wǒ,ฉัน,,char,Beginner,,我是学生。,,ฉันเป็นนักเรียน,[],"{""character_to_word"": [""我们""], ""word_expansion"": [""我们""]}",legacy-v20-curated,needs_linguistic_review
+学,xué,เรียน,,char,Beginner,,我学中文。,,ฉันเรียนภาษาจีน,[],"{""character_to_word"": [""学习"", ""学生""], ""word_expansion"": [""学习"", ""学生""]}",legacy-v20-curated,needs_linguistic_review
+生,shēng,เกิด / ชีวิต / นักเรียนในคำประสม,,char,Beginner,,我是学生。,,ฉันเป็นนักเรียน,[],"{""character_to_word"": [""学生""]}",legacy-v20-curated,needs_linguistic_review
+工,gōng,งาน / แรงงาน,,char,Beginner,,我去工作。,,ฉันไปทำงาน,[],"{""character_to_word"": [""工作"", ""工作日""]}",legacy-v20-curated,needs_linguistic_review
+作,zuò,ทำ / สร้าง,,char,Beginner,,我在工作。,,ฉันกำลังทำงาน,[],"{""character_to_word"": [""工作"", ""工作日""]}",legacy-v20-curated,needs_linguistic_review
+会,huì,สามารถ / จะ / ประชุม,,char,Beginner,,我会说中文。,,ฉันพูดภาษาจีนได้,[],"{""character_to_word"": [""会议"", ""开会""]}",legacy-v20-curated,needs_linguistic_review
+开,kāi,เปิด / เริ่ม,,char,Beginner,,我们开始吧。,,พวกเราเริ่มกันเถอะ,[],"{""character_to_word"": [""开会""]}",legacy-v20-curated,needs_linguistic_review
+议,yì,หารือ / ปรึกษา,,char,Intermediate,,会议几点开始？,,การประชุมเริ่มกี่โมง,[],"{""character_to_word"": [""会议""]}",legacy-v20-curated,needs_linguistic_review
+项,xiàng,รายการ / โครงการ,,char,Intermediate,,这个项目很重要。,,โครงการนี้สำคัญมาก,[],"{""character_to_word"": [""项目""]}",legacy-v20-curated,needs_linguistic_review
+目,mù,ตา / รายการ,,char,Intermediate,,项目进展顺利。,,โครงการคืบหน้าอย่างราบรื่น,[],"{""character_to_word"": [""项目""]}",legacy-v20-curated,needs_linguistic_review
+计,jì,นับ / วางแผน,,char,Intermediate,,这是我们的计划。,,นี่คือแผนของพวกเรา,[],"{""character_to_word"": [""计划""]}",legacy-v20-curated,needs_linguistic_review
+划,huà,กำหนด / ขีด / วางแผน,,char,Intermediate,,计划已经确定。,,แผนได้รับการยืนยันแล้ว,[],"{""character_to_word"": [""计划""]}",legacy-v20-curated,needs_linguistic_review
+预,yù,ล่วงหน้า,,char,Advanced,,预算已经批准。,,งบประมาณได้รับอนุมัติแล้ว,[],"{""character_to_word"": [""预算""]}",legacy-v20-curated,needs_linguistic_review
+算,suàn,คำนวณ,,char,Intermediate,,我们需要计算成本。,,เราต้องคำนวณต้นทุน,[],"{""character_to_word"": [""预算""]}",legacy-v20-curated,needs_linguistic_review
+效,xiào,ผล / ประสิทธิผล,,char,Advanced,,这个活动很有效。,,กิจกรรมนี้ได้ผลดี,[],{},legacy-v20-curated,needs_linguistic_review
+率,lǜ,อัตรา,,char,Advanced,,转化率提高了。,,อัตราการเปลี่ยนเป็นลูกค้าสูงขึ้น,[],"{""character_to_word"": [""效率"", ""转化率""]}",legacy-v20-curated,needs_linguistic_review
+转,zhuǎn,เปลี่ยน / หมุน,,char,Intermediate,,需要转变策略。,,ต้องเปลี่ยนกลยุทธ์,[],"{""character_to_word"": [""转化"", ""转化率""]}",legacy-v20-curated,needs_linguistic_review
+化,huà,เปลี่ยนแปลง,,char,Intermediate,,市场变化很快。,,ตลาดเปลี่ยนแปลงเร็วมาก,[],"{""character_to_word"": [""转化"", ""转化率""]}",legacy-v20-curated,needs_linguistic_review
+策,cè,กลยุทธ์ / แผน,,char,Advanced,,这是新的策略。,,นี่คือกลยุทธ์ใหม่,[],"{""character_to_word"": [""策略""]}",legacy-v20-curated,needs_linguistic_review
+略,lüè,แผนโดยย่อ / กลยุทธ์,,char,Advanced,,策略需要调整。,,กลยุทธ์ต้องปรับ,[],"{""character_to_word"": [""策略""]}",legacy-v20-curated,needs_linguistic_review
+你们,nǐmen,พวกคุณ,,word,Beginner,,你们好！,,สวัสดีทุกคน,[],"{""word_expansion"": [""你们好""]}",legacy-v20-curated,needs_linguistic_review
+我们,wǒmen,พวกเรา,,word,Beginner,,我们一起学习。,,พวกเราเรียนด้วยกัน,[],{},legacy-v20-curated,needs_linguistic_review
+他们,tāmen,พวกเขา,,word,Beginner,,他们在工作。,,พวกเขากำลังทำงาน,[],{},legacy-v20-curated,needs_linguistic_review
+朋友,péngyou,เพื่อน,,word,Beginner,,他是我的朋友。,,เขาเป็นเพื่อนของฉัน,[],{},legacy-v20-curated,needs_linguistic_review
+你好,nǐ hǎo,สวัสดี,,word,Beginner,,你好，很高兴认识你。,,สวัสดี ยินดีที่ได้รู้จัก,[],"{""word_expansion"": [""你好吗？""]}",legacy-v20-curated,needs_linguistic_review
+你好吗？,nǐ hǎo ma,คุณสบายดีไหม,,phrase,Beginner,,你好吗？,,คุณสบายดีไหม,[],{},legacy-v20-curated,needs_linguistic_review
+你们好,nǐmen hǎo,สวัสดีพวกคุณ,,phrase,Beginner,,你们好！,,สวัสดีทุกคน,[],{},legacy-v20-curated,needs_linguistic_review
+手机,shǒujī,โทรศัพท์มือถือ,,word,Beginner,,我的手机在桌子上。,,มือถือฉันอยู่บนโต๊ะ,[],"{""word_expansion"": [""手机壳""]}",legacy-v20-curated,needs_linguistic_review
+手机壳,shǒujīké,เคสโทรศัพท์,,word,Intermediate,,这个手机壳很好看。,,เคสโทรศัพท์อันนี้สวยมาก,[],{},legacy-v20-curated,needs_linguistic_review
+电脑,diànnǎo,คอมพิวเตอร์,,word,Beginner,,我用电脑工作。,,ฉันใช้คอมพิวเตอร์ทำงาน,[],{},legacy-v20-curated,needs_linguistic_review
+电话,diànhuà,โทรศัพท์ / สายโทรศัพท์,,word,Beginner,,请给我打电话。,,กรุณาโทรหาฉัน,[],{},legacy-v20-curated,needs_linguistic_review
+打电话,dǎ diànhuà,โทรศัพท์หา,,phrase,Beginner,,我给妈妈打电话。,,ฉันโทรหาแม่,[],{},legacy-v20-curated,needs_linguistic_review
+喝水,hē shuǐ,ดื่มน้ำ,,phrase,Beginner,,记得喝水。,,อย่าลืมดื่มน้ำ,[],{},legacy-v20-curated,needs_linguistic_review
+喝茶,hē chá,ดื่มชา,,phrase,Beginner,,我们一起喝茶。,,พวกเราดื่มชาด้วยกัน,[],{},legacy-v20-curated,needs_linguistic_review
+唱歌,chànggē,ร้องเพลง,,word,Beginner,,我喜欢唱歌。,,ฉันชอบร้องเพลง,[],{},legacy-v20-curated,needs_linguistic_review
+森林,sēnlín,ป่าไม้,,word,Intermediate,,森林里有很多树。,,ในป่ามีต้นไม้มากมาย,[],{},legacy-v20-curated,needs_linguistic_review
+学生,xuésheng,นักเรียน,,word,Beginner,,我是学生。,,ฉันเป็นนักเรียน,[],{},legacy-v20-curated,needs_linguistic_review
+学习,xuéxí,เรียน / ศึกษา,,word,Beginner,,我学习中文。,,ฉันเรียนภาษาจีน,[],{},legacy-v20-curated,needs_linguistic_review
+中文,zhōngwén,ภาษาจีน,,word,Beginner,,我学习中文。,,ฉันเรียนภาษาจีน,[],{},legacy-v20-curated,needs_linguistic_review
+汉语,hànyǔ,ภาษาจีน (ภาษาฮั่น),,word,Intermediate,,我在学汉语。,,ฉันกำลังเรียนภาษาจีน,[],{},legacy-v20-curated,needs_linguistic_review
+说中文,shuō zhōngwén,พูดภาษาจีน,,phrase,Beginner,,我会说中文。,,ฉันพูดภาษาจีนได้,[],"{""word_expansion"": [""我会说中文""]}",legacy-v20-curated,needs_linguistic_review
+我会说中文,wǒ huì shuō zhōngwén,ฉันพูดภาษาจีนได้,,phrase,Beginner,,我会说中文。,,ฉันพูดภาษาจีนได้,[],{},legacy-v20-curated,needs_linguistic_review
+工作,gōngzuò,ทำงาน / งาน,,word,Beginner,,我在工作。,,ฉันกำลังทำงาน,[],"{""word_expansion"": [""工作日"", ""工作效率""]}",legacy-v20-curated,needs_linguistic_review
+工作日,gōngzuòrì,วันทำงาน,,word,Intermediate,,工作日请联系我。,,กรุณาติดต่อฉันในวันทำงาน,[],{},legacy-v20-curated,needs_linguistic_review
+休息,xiūxi,พักผ่อน,,word,Beginner,,我想休息一下。,,ฉันอยากพักสักหน่อย,[],"{""word_expansion"": [""休息一下""]}",legacy-v20-curated,needs_linguistic_review
+休息一下,xiūxi yíxià,พักสักหน่อย,,phrase,Beginner,,我们休息一下吧。,,พวกเราพักกันสักหน่อยเถอะ,[],{},legacy-v20-curated,needs_linguistic_review
+时间,shíjiān,เวลา,,word,Beginner,,你有时间吗？,,คุณมีเวลาไหม,[],"{""word_expansion"": [""有时间"", ""确认时间""]}",legacy-v20-curated,needs_linguistic_review
+有时间,yǒu shíjiān,มีเวลา,,phrase,Beginner,,我今天有时间。,,วันนี้ฉันมีเวลา,[],"{""word_expansion"": [""你有时间吗？""]}",legacy-v20-curated,needs_linguistic_review
+你有时间吗？,nǐ yǒu shíjiān ma,คุณมีเวลาไหม,,phrase,Intermediate,,你有时间吗？,,คุณมีเวลาไหม,[],{},legacy-v20-curated,needs_linguistic_review
+明天,míngtiān,พรุ่งนี้,,word,Beginner,,明天见！,,เจอกันพรุ่งนี้,[],"{""word_expansion"": [""明天见""]}",legacy-v20-curated,needs_linguistic_review
+明天见,míngtiān jiàn,เจอกันพรุ่งนี้,,phrase,Beginner,,明天见。,,เจอกันพรุ่งนี้,[],{},legacy-v20-curated,needs_linguistic_review
+今天,jīntiān,วันนี้,,word,Beginner,,今天很忙。,,วันนี้ยุ่งมาก,[],{},legacy-v20-curated,needs_linguistic_review
+开心,kāixīn,มีความสุข,,word,Beginner,,我很开心。,,ฉันมีความสุข,[],{},legacy-v20-curated,needs_linguistic_review
+心情,xīnqíng,อารมณ์ / ความรู้สึก,,word,Intermediate,,我今天心情很好。,,วันนี้ฉันอารมณ์ดี,[],"{""word_expansion"": [""心情很好""]}",legacy-v20-curated,needs_linguistic_review
+心情很好,xīnqíng hěn hǎo,อารมณ์ดีมาก,,phrase,Intermediate,,我今天心情很好。,,วันนี้ฉันอารมณ์ดีมาก,[],{},legacy-v20-curated,needs_linguistic_review
+请问,qǐngwèn,ขอถามหน่อย,,word,Beginner,,请问，你叫什么名字？,,ขอถามหน่อย คุณชื่ออะไร,[],"{""word_expansion"": [""请问一下""]}",legacy-v20-curated,needs_linguistic_review
+请问一下,qǐngwèn yíxià,ขอสอบถามสักนิด,,phrase,Intermediate,,我想请问一下。,,ฉันอยากขอถามสักนิด,[],{},legacy-v20-curated,needs_linguistic_review
+说话,shuōhuà,พูดคุย,,word,Beginner,,请小声说话。,,กรุณาพูดเบา ๆ,[],{},legacy-v20-curated,needs_linguistic_review
+普通话,pǔtōnghuà,ภาษาจีนกลาง,,word,Intermediate,,她会说普通话。,,เธอพูดภาษาจีนกลางได้,[],{},legacy-v20-curated,needs_linguistic_review
+会议,huìyì,การประชุม,,word,Intermediate,,会议几点开始？,,การประชุมเริ่มกี่โมง,[],"{""word_expansion"": [""开会时间""]}",legacy-v20-curated,needs_linguistic_review
+开会,kāihuì,ประชุม,,word,Intermediate,,我们下午开会。,,พวกเราประชุมตอนบ่าย,[],"{""word_expansion"": [""开会时间""]}",legacy-v20-curated,needs_linguistic_review
+开会时间,kāihuì shíjiān,เวลาประชุม,,phrase,Intermediate,,请确认开会时间。,,กรุณายืนยันเวลาประชุม,[],{},legacy-v20-curated,needs_linguistic_review
+确认,quèrèn,ยืนยัน,,word,Intermediate,,请确认时间。,,กรุณายืนยันเวลา,[],"{""word_expansion"": [""确认时间""]}",legacy-v20-curated,needs_linguistic_review
+确认时间,quèrèn shíjiān,ยืนยันเวลา,,phrase,Intermediate,,请确认时间。,,กรุณายืนยันเวลา,[],{},legacy-v20-curated,needs_linguistic_review
+项目,xiàngmù,โครงการ,,word,Intermediate,,这个项目很重要。,,โครงการนี้สำคัญมาก,[],"{""word_expansion"": [""项目进度""]}",legacy-v20-curated,needs_linguistic_review
+项目进度,xiàngmù jìndù,ความคืบหน้าของโครงการ,,phrase,Intermediate,,请更新项目进度。,,กรุณาอัปเดตความคืบหน้าโครงการ,[],{},legacy-v20-curated,needs_linguistic_review
+计划,jìhuà,แผน / วางแผน,,word,Intermediate,,我们需要一个计划。,,พวกเราต้องการแผน,[],"{""word_expansion"": [""营销计划""]}",legacy-v20-curated,needs_linguistic_review
+营销计划,yíngxiāo jìhuà,แผนการตลาด,,phrase,Advanced,,我们正在制定营销计划。,,พวกเรากำลังจัดทำแผนการตลาด,[],{},legacy-v20-curated,needs_linguistic_review
+预算,yùsuàn,งบประมาณ,,word,Advanced,,预算需要调整。,,ต้องปรับงบประมาณ,[],"{""word_expansion"": [""营销预算""]}",legacy-v20-curated,needs_linguistic_review
+营销预算,yíngxiāo yùsuàn,งบการตลาด,,phrase,Advanced,,营销预算已经批准。,,งบการตลาดได้รับอนุมัติแล้ว,[],{},legacy-v20-curated,needs_linguistic_review
+市场,shìchǎng,ตลาด,,word,Intermediate,,我们研究市场。,,พวกเราศึกษาตลาด,[],"{""word_expansion"": [""市场分析""]}",legacy-v20-curated,needs_linguistic_review
+市场分析,shìchǎng fēnxī,การวิเคราะห์ตลาด,,phrase,Advanced,,我们需要市场分析。,,เราต้องการการวิเคราะห์ตลาด,[],{},legacy-v20-curated,needs_linguistic_review
+客户,kèhù,ลูกค้า,,word,Intermediate,,我们重视客户。,,พวกเราให้ความสำคัญกับลูกค้า,[],"{""word_expansion"": [""客户反馈""]}",legacy-v20-curated,needs_linguistic_review
+客户反馈,kèhù fǎnkuì,ความคิดเห็นจากลูกค้า,,phrase,Advanced,,我们收集客户反馈。,,พวกเราเก็บความคิดเห็นจากลูกค้า,[],{},legacy-v20-curated,needs_linguistic_review
+品牌,pǐnpái,แบรนด์,,word,Intermediate,,这是一个新品牌。,,นี่คือแบรนด์ใหม่,[],"{""word_expansion"": [""品牌策略""]}",legacy-v20-curated,needs_linguistic_review
+品牌策略,pǐnpái cèlüè,กลยุทธ์แบรนด์,,phrase,Advanced,,品牌策略需要调整。,,กลยุทธ์แบรนด์ต้องปรับ,[],{},legacy-v20-curated,needs_linguistic_review
+营销,yíngxiāo,การตลาด,,word,Advanced,,我负责营销工作。,,ฉันรับผิดชอบงานการตลาด,[],"{""word_expansion"": [""数字营销"", ""营销计划"", ""营销预算""]}",legacy-v20-curated,needs_linguistic_review
+数字营销,shùzì yíngxiāo,การตลาดดิจิทัล,,phrase,Advanced,,数字营销很重要。,,การตลาดดิจิทัลสำคัญมาก,[],{},legacy-v20-curated,needs_linguistic_review
+数据,shùjù,ข้อมูล / ดาต้า,,word,Intermediate,,我们需要数据。,,พวกเราต้องการข้อมูล,[],"{""word_expansion"": [""数据分析""]}",legacy-v20-curated,needs_linguistic_review
+数据分析,shùjù fēnxī,การวิเคราะห์ข้อมูล,,phrase,Advanced,,数据分析很重要。,,การวิเคราะห์ข้อมูลสำคัญมาก,[],{},legacy-v20-curated,needs_linguistic_review
+转化,zhuǎnhuà,เปลี่ยนเป็นผลลัพธ์ / คอนเวอร์ชัน,,word,Advanced,,我们要提高转化。,,พวกเราต้องเพิ่มคอนเวอร์ชัน,[],"{""word_expansion"": [""转化率""]}",legacy-v20-curated,needs_linguistic_review
+转化率,zhuǎnhuàlǜ,อัตราคอนเวอร์ชัน,,word,Advanced,,转化率提高了。,,อัตราคอนเวอร์ชันสูงขึ้น,[],"{""word_expansion"": [""转化率分析""]}",legacy-v20-curated,needs_linguistic_review
+转化率分析,zhuǎnhuàlǜ fēnxī,การวิเคราะห์อัตราคอนเวอร์ชัน,,phrase,Advanced,,我们要做转化率分析。,,เราต้องวิเคราะห์อัตราคอนเวอร์ชัน,[],{},legacy-v20-curated,needs_linguistic_review
+效率,xiàolǜ,ประสิทธิภาพ,,word,Advanced,,我们要提高效率。,,พวกเราต้องเพิ่มประสิทธิภาพ,[],"{""word_expansion"": [""工作效率""]}",legacy-v20-curated,needs_linguistic_review
+工作效率,gōngzuò xiàolǜ,ประสิทธิภาพการทำงาน,,phrase,Advanced,,我们要提高工作效率。,,พวกเราต้องเพิ่มประสิทธิภาพการทำงาน,[],{},legacy-v20-curated,needs_linguistic_review
+策略,cèlüè,กลยุทธ์,,word,Advanced,,这项策略很有效。,,กลยุทธ์นี้ได้ผลดี,[],"{""word_expansion"": [""策略调整""]}",legacy-v20-curated,needs_linguistic_review
+策略调整,cèlüè tiáozhěng,การปรับกลยุทธ์,,phrase,Advanced,,我们正在进行策略调整。,,พวกเรากำลังปรับกลยุทธ์,[],{},legacy-v20-curated,needs_linguistic_review
+月,yuè,พระจันทร์ / เดือน,,character,Unassigned,,,,,[],"{""component_to_character"": [""朋"", ""望"", ""明""]}",legacy-v26-pedagogic,needs_linguistic_review
+望,wàng,มอง / หวัง,,character,Unassigned,,,,,"[""月""]","{""word_expansion"": [""希望""]}",legacy-v26-pedagogic,needs_linguistic_review
+希望,xīwàng,ความหวัง / หวังว่า,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+只,zhǐ,เพียง / แค่,,character,Unassigned,,,,,[],"{""word_expansion"": [""只是"", ""只有"", ""只能"", ""只要""]}",legacy-v26-pedagogic,needs_linguistic_review
+只是,zhǐshì,เพียงแต่,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+只有,zhǐyǒu,มีเพียง / เท่านั้น,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+只能,zhǐnéng,ทำได้เพียง,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+只要,zhǐyào,ขอเพียง,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+灯,dēng,โคมไฟ / ไฟ,,character,Unassigned,,,,,"[""火""]","{""word_expansion"": [""电灯"", ""台灯"", ""灯光"", ""红绿灯""]}",legacy-v26-pedagogic,needs_linguistic_review
+电灯,diàndēng,หลอดไฟ / ไฟฟ้า,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+台灯,táidēng,โคมไฟตั้งโต๊ะ,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+灯光,dēngguāng,แสงไฟ,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+红绿灯,hónglǜdēng,สัญญาณไฟจราจร,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+没,méi,ไม่ / ยังไม่,,character,Unassigned,,,,,"[""氵""]",{},legacy-v26-pedagogic,needs_linguistic_review
+水,shuǐ,น้ำ,,character,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+海边,hǎibiān,ริมทะเล,,word,Unassigned,,,,,[],{},legacy-v26-pedagogic,needs_linguistic_review
+息,xī,การพัก / ลมหายใจ,,character,Unassigned,,,,,"[""心""]",{},legacy-v26-pedagogic,needs_linguistic_review
