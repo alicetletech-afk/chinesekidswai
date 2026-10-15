@@ -1,0 +1,2 @@
+HSK vocabulary: drkameleon/complete-hsk-vocabulary (MIT), HSK 2.0 old levels 1-6. https://github.com/drkameleon/complete-hsk-vocabulary
+Full vocabulary is loaded online at runtime. Offline fallback uses the previous curated demo words. English glosses are temporary where Thai translation not verified.
