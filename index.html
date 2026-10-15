@@ -165,7 +165,51 @@ body.in-module .shell{max-width:680px;padding:14px 18px 45px}
 #module-area .graph::before,#module-area .graph::after{display:none!important}
 #module-area .graph{background:radial-gradient(circle at 50% 40%,#fffafd,#f9f4fb)!important}
 #module-area .level-help{line-height:1.65}
-</style></head><body><div class="shell"><main class="new-home" id="home">
+</style>
+<style id="farm-v25-style">
+:root{--farm-bg:#fbf6f7;--farm-pink:#f6dce7;--farm-lilac:#e7e1f8;--farm-blue:#ddeffc;--farm-mint:#dff1e8}
+body.in-module{background:var(--farm-bg)!important}
+#home .app-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#home .app-grid .tile{width:100%!important;grid-column:auto!important;justify-self:stretch!important;min-height:197px!important}
+#home .app-grid .tile:last-child{grid-column:1/3!important;min-height:171px!important}
+#home .tile-breakdown{background:#eee7f9!important}
+#home .tile-build{background:#ddeffc!important}
+#home .tile-expand{background:#dff1e8!important}
+#home .tile-practice{background:#f6dce7!important}
+#home .tile-art{height:112px!important}#home .tile-art svg{height:108px!important}
+#module-area{min-width:0}#module-area .graph{height:clamp(390px,70vh,675px);min-height:390px;border-radius:28px;background:radial-gradient(circle at 50% 30%,#fffcff,#f9f4fa)!important;overflow:hidden}
+#module-area .level-row{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:9px!important;max-width:none!important}
+#module-area .level-option{font-size:13px!important;min-height:44px;padding:8px 5px!important;border-radius:17px!important}
+#breakdown-screen,#practice-screen{padding:0 0 45px}
+#breakdown-screen h1,#practice-screen h1{font-size:27px;letter-spacing:-.7px;color:#76536c;margin:10px 0}
+.soft-intro{color:#917c8d;font-size:13px;line-height:1.8;max-width:530px;margin:0 0 20px}
+.break-select{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 16px;background:#fff;border-radius:20px;margin:18px 0}
+.break-select label{font-weight:700;color:#765a73;font-size:13px}.break-select select{border:0;outline:0;padding:11px 13px;min-width:124px;border-radius:14px;background:#f4eaf6;color:#70536e;font-size:17px}
+.break-panel,.practice-panel{background:#fff;border-radius:30px;padding:clamp(20px,4vw,32px);box-shadow:0 12px 40px #a8839d10;margin:16px 0}
+.break-component-row{display:flex;align-items:stretch;justify-content:center;gap:clamp(7px,2vw,16px);flex-wrap:wrap;margin:18px 0 8px}
+.break-component{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:clamp(79px,24vw,132px);min-height:126px;border:0;border-radius:30px;background:#f6dce7;color:#79576e;box-shadow:0 8px 20px #b999aa10;cursor:pointer;padding:13px 8px;transition:transform .2s,box-shadow .2s}
+.break-component:nth-of-type(2n){background:#e7e1f8}.break-component:nth-of-type(3n){background:#ddeffc}
+.break-component:focus-visible,.break-component:hover{transform:translateY(-3px);outline:2px solid #d7bbd6}
+.break-hanzi{font-size:38px;line-height:1.3;font-weight:650}.break-pinyin{font-size:13px;color:#8e7188}.break-meaning{font-size:12px;color:#876f7e;text-align:center;line-height:1.4}
+.break-plus{font-size:24px;color:#b496ac;align-self:center;line-height:1.3}
+.break-arrow{font-size:27px;text-align:center;color:#a992ba;margin:8px auto 14px}
+.break-result{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:#dff1e8;margin:0 auto;border-radius:36px;padding:22px 24px;width:min(100%,300px);min-height:168px;color:#5f826f}
+.break-result .break-hanzi{font-size:64px}.break-result .break-pinyin{font-size:18px}.break-result .break-meaning{font-size:15px}
+.break-note{font-size:12px;line-height:1.65;color:#9d8391;text-align:center;margin:16px auto}
+.break-word-heading{color:#77556d;font-size:15px;font-weight:700;margin:24px 0 12px}
+.break-related{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.break-related button{background:#f7f0fa;border:0;border-radius:21px;padding:16px 8px;color:#77556d;cursor:pointer;text-align:center;font-size:23px}
+.break-related small{display:block;font-size:12px;color:#93768c;margin-top:7px;line-height:1.5}
+.break-action{display:block;width:100%;margin:20px auto 0;border:0;border-radius:19px;background:#ded2f1;color:#665080;font-size:14px;font-weight:750;padding:15px 17px;cursor:pointer}
+.break-component-info{margin:13px 0 2px;background:#faf5fb;padding:12px 15px;border-radius:17px;text-align:center;color:#75576d;font-size:13px;min-height:46px}
+.practice-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.practice-tabs button{border:0;border-radius:16px;background:#f1e5ee;color:#805c73;padding:10px 12px;cursor:pointer;font-size:12px}.practice-tabs button.active{background:#dcefe5;color:#507a67;font-weight:750}
+.practice-prompt{text-align:center;color:#88677e;font-size:14px;line-height:1.7}.practice-word{font-size:48px;color:#76516d;font-weight:750;text-align:center;margin:23px 0}.practice-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.practice-options button{border:0;border-radius:19px;background:#f5eef8;padding:17px 9px;font-size:15px;color:#70576f;cursor:pointer;min-height:58px}.practice-options button:focus-visible{outline:2px solid #ac86ae}.practice-options button.correct{background:#d8f1e1;color:#39674e}.practice-options button.incorrect{background:#fae0e6;color:#964f64}
+.practice-feedback{text-align:center;min-height:28px;margin-top:17px;color:#80667a;font-size:14px}.practice-next{border:0;border-radius:16px;background:#dff1e8;color:#537866;padding:12px 25px;display:block;margin:13px auto;cursor:pointer}
+#breakdown-screen.hidden,#practice-screen.hidden{display:none!important}
+@media(max-width:550px){#home .app-grid .tile{min-height:175px!important}#home .app-grid .tile:last-child{min-height:175px!important}#module-area .graph{height:60vh;min-height:420px}#module-area .level-option{font-size:12px!important}.break-component-row{gap:6px}.break-component{width:clamp(74px,21vw,92px);min-height:121px;border-radius:25px}.break-hanzi{font-size:33px}.break-plus{font-size:17px}.break-component-row{gap:5px}.break-related{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:370px){.break-component{width:75px;padding:10px 5px}.break-plus{font-size:17px}.break-component-row{gap:4px}}
+</style>
+</head><body><div class="shell"><main class="new-home" id="home">
 <section aria-label="ชื่อแพลตฟอร์ม" class="home-heading">
 <div class="mini-wordmark">interactive chinese vocabulary</div>
 <h1>Farm จีน <span>干嘛？</span></h1>
@@ -176,11 +220,13 @@ body.in-module .shell{max-width:680px;padding:14px 18px 45px}
 <div class="choices-title">เลือกโหมดที่ชอบ</div>
 <div class="app-grid">
 <button class="mode tile tile-family" data-mode="family" type="button"><span class="tile-art"><svg aria-hidden="true" viewbox="0 0 150 112"><path d="M73 56 C55 40 39 29 23 25 M73 56 C98 36 108 27 129 26 M73 56 C50 75 34 88 23 94 M73 56 C98 76 113 91 130 91" fill="none" stroke="#dbadc1" stroke-linecap="round" stroke-width="2.7"></path><circle cx="23" cy="25" fill="#ffedf3" r="16"></circle><circle cx="129" cy="26" fill="#ffedf3" r="16"></circle><circle cx="23" cy="94" fill="#ffedf3" r="16"></circle><circle cx="130" cy="91" fill="#ffedf3" r="16"></circle><circle cx="73" cy="56" fill="#f2b7ce" r="28"></circle><g fill="#84546c" font-size="19" text-anchor="middle"><text x="23" y="31">吃</text><text x="129" y="32">喝</text><text x="23" y="100">唱</text><text x="130" y="97">叫</text></g><text fill="#744b64" font-size="28" text-anchor="middle" x="73" y="65">口</text></svg></span><span class="tile-copy"><strong>Character Family</strong><small>แกะตัวจีน</small></span></button>
+<button class="mode tile tile-breakdown" data-mode="breakdown" type="button"><span class="tile-art"><svg aria-hidden="true" viewBox="0 0 150 112"><g fill="#e6dcfa" stroke="#fff" stroke-width="2"><rect x="4" y="18" width="42" height="41" rx="19"/><rect x="54" y="18" width="42" height="41" rx="19"/><rect x="104" y="18" width="42" height="41" rx="19"/><rect x="50" y="73" width="50" height="38" rx="19" fill="#d6c9f0"/></g><g font-size="20" fill="#755e8c" text-anchor="middle"><text x="25" y="45">亡</text><text x="75" y="45">月</text><text x="125" y="45">王</text><text x="75" y="99">望</text></g><path d="M75 61v9m-5 -4 5 5 5 -5" stroke="#a68bc4" fill="none" stroke-width="2.5" stroke-linecap="round"/></svg></span><span class="tile-copy"><strong>Character Breakdown</strong><small>แยกส่วนประกอบ</small></span></button>
 <button class="mode tile tile-build" data-mode="build" type="button"><span class="tile-art"><svg aria-hidden="true" viewbox="0 0 150 112"><path d="M42 30 C58 49 69 56 76 74 M112 30 C96 49 84 56 76 74" fill="none" stroke="#bfb1df" stroke-linecap="round" stroke-width="2.8"></path><rect fill="#e8ddfb" height="43" rx="18" width="47" x="18" y="10"></rect><rect fill="#e8ddfb" height="43" rx="18" width="47" x="89" y="10"></rect><rect fill="#d6c4f1" height="43" rx="20" width="69" x="42" y="60"></rect><g fill="#6f598a" text-anchor="middle"><text font-size="23" x="42" y="39">手</text><text font-size="23" x="112" y="39">机</text><text font-size="23" x="76" y="88">手机</text></g></svg></span><span class="tile-copy"><strong>Word Building</strong><small>ต่อคำศัพท์</small></span></button>
 <button class="mode tile tile-expand" data-mode="expand" type="button"><span class="tile-art"><svg aria-hidden="true" viewbox="0 0 150 112"><path d="M25 55 C51 55 47 29 76 29 L105 29 M25 55 C52 55 51 84 79 84 L103 84" fill="none" stroke="#a8d1c0" stroke-linecap="round" stroke-width="3"></path><rect fill="#c1e7d3" height="36" rx="17" width="41" x="5" y="38"></rect><rect fill="#d8f1e3" height="38" rx="18" width="71" x="71" y="10"></rect><rect fill="#d8f1e3" height="38" rx="18" width="75" x="71" y="65"></rect><g fill="#4f816d" text-anchor="middle"><text font-size="23" x="25" y="63">你</text><text font-size="21" x="106" y="35">你好</text><text font-size="17" x="109" y="90">你好吗</text></g></svg></span><span class="tile-copy"><strong>Word Expansion Tree</strong><small>แตกกิ่งคำ</small></span></button>
+<button class="mode tile tile-practice" data-mode="practice" type="button"><span class="tile-art"><svg aria-hidden="true" viewBox="0 0 150 112"><rect x="28" y="9" width="94" height="94" rx="26" fill="#d9eefb" stroke="#fff" stroke-width="3"/><text x="75" y="52" text-anchor="middle" font-size="30" fill="#5c86a0">学</text><path d="m57 73 12 10 24-24" fill="none" stroke="#6c9dae" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="tile-copy"><strong>Practice &amp; Review</strong><small>ฝึกและทบทวน</small></span></button>
 </div>
 </section>
-</main><div id="module-area"><section id="picker"><div class="bar"><button aria-label="กลับหน้าแรก" class="back" id="to-home" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m14 5-7 7 7 7"></path></svg></button><span class="brand">Farm จีน <span>干嘛？</span></span></div><div class="intro"><p class="eyebrow" id="mode-sub"></p><h1 id="mode-title"></h1><p id="mode-desc"></p></div><label class="searchbox"><svg aria-hidden="true" class="search-icon" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input aria-label="ค้นหาคำศัพท์" autocomplete="off" id="query" placeholder="ค้นหาจีน / พินอิน / คำแปลไทย" type="search"/></label><div class="level-heading">เลือกระดับ HSK</div><div class="level-row" aria-label="ระดับคำศัพท์"><button type="button" class="level-option active" data-level="1">HSK 1</button><button type="button" class="level-option " data-level="2">HSK 2</button><button type="button" class="level-option " data-level="3">HSK 3</button><button type="button" class="level-option " data-level="4">HSK 4</button><button type="button" class="level-option " data-level="5">HSK 5</button><button type="button" class="level-option " data-level="6">HSK 6</button></div><p class="level-help" id="level-help">กำลังเตรียมคลังคำศัพท์ HSK 1–6</p><div class="count" id="count"></div><div class="words" id="words"></div></section><section class="hidden" id="viewer"><div class="bar"><button aria-label="กลับไปเลือกคำ" class="back" id="back-list" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m14 5-7 7 7 7"></path></svg></button><span class="brand" id="viewer-brand">Character Family</span></div><div class="graph-head"><h2 id="graph-title"></h2><p class="graph-hint">แตะคำเพื่อดูความหมาย · ลากเพื่อสำรวจ</p></div><div class="graph"><svg aria-label="แผนภาพความสัมพันธ์คำศัพท์" id="viz" viewbox="0 0 900 520"><g id="scene"></g></svg><div class="controls"><button aria-label="ซูมเข้า" id="plus">+</button><button aria-label="ซูมออก" id="minus">−</button><button aria-label="รีเซ็ตมุมมอง" id="reset">↺</button></div></div></section></div></div><script>// Starter vocabulary; shared by all three modules.
+</main><div id="module-area"><section id="picker"><div class="bar"><button aria-label="กลับหน้าแรก" class="back" id="to-home" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m14 5-7 7 7 7"></path></svg></button><span class="brand">Farm จีน <span>干嘛？</span></span></div><div class="intro"><p class="eyebrow" id="mode-sub"></p><h1 id="mode-title"></h1><p id="mode-desc"></p></div><label class="searchbox"><svg aria-hidden="true" class="search-icon" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input aria-label="ค้นหาคำศัพท์" autocomplete="off" id="query" placeholder="ค้นหาจีน / พินอิน / คำแปลไทย" type="search"/></label><div class="level-heading">เลือกระดับ</div><div class="level-row" aria-label="ระดับคำศัพท์"><button type="button" class="level-option active" data-level="1">Beginner</button><button type="button" class="level-option" data-level="2">Intermediate</button><button type="button" class="level-option" data-level="3">Advanced</button></div><p class="level-help" id="level-help">กำลังเตรียมคลังคำศัพท์ HSK 1–6</p><div class="count" id="count"></div><div class="words" id="words"></div></section><section class="hidden" id="viewer"><div class="bar"><button aria-label="กลับไปเลือกคำ" class="back" id="back-list" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m14 5-7 7 7 7"></path></svg></button><span class="brand" id="viewer-brand">Character Family</span></div><div class="graph-head"><h2 id="graph-title"></h2><p class="graph-hint">แตะคำเพื่อดูความหมาย · ลากเพื่อสำรวจ</p></div><div class="graph"><svg aria-label="แผนภาพความสัมพันธ์คำศัพท์" id="viz" viewbox="0 0 900 520"><g id="scene"></g></svg><div class="controls"><button aria-label="ซูมเข้า" id="plus">+</button><button aria-label="ซูมออก" id="minus">−</button><button aria-label="รีเซ็ตมุมมอง" id="reset">↺</button></div></div></section><section id="breakdown-screen" class="hidden"><div class="bar"><button type="button" id="break-home" class="back" aria-label="กลับหน้าแรก">←</button><span class="brand">Farm จีน <span>干嘛？</span></span></div><p class="eyebrow">MODULE 02</p><h1>Character Breakdown</h1><p class="soft-intro">แยกส่วนประกอบเพื่อช่วยจำรูปอักษร ไม่ใช่คำอธิบายรากศัพท์ทางประวัติศาสตร์</p><div class="break-select"><label for="break-target">เลือกตัวอักษร</label><select id="break-target"></select></div><div id="break-content"></div></section><section id="practice-screen" class="hidden"><div class="bar"><button type="button" id="practice-home" class="back" aria-label="กลับหน้าแรก">←</button><span class="brand">Farm จีน <span>干嘛？</span></span></div><p class="eyebrow">MODULE 05</p><h1>Practice &amp; Review</h1><p class="soft-intro">ฝึกจากชุดคำศัพท์ที่ตรวจทานไว้ในตัวโปรเจกต์</p><div class="practice-tabs" id="practice-tabs"></div><div id="practice-content"></div></section></div></div><script>// Starter vocabulary; shared by all three modules.
 const D=[{"id":"口","py":"kǒu","th":"ปาก","kind":"component","level":1,"aliases":["kou3","kou"],"ex":"请张开口。 — กรุณาอ้าปาก"},{"id":"木","py":"mù","th":"ไม้","kind":"component","level":1,"aliases":["mu4","mu"],"ex":"这里有很多树木。 — ที่นี่มีต้นไม้มากมาย"},{"id":"女","py":"nǚ","th":"ผู้หญิง","kind":"component","level":1,"aliases":["nv3","nv"],"ex":"她是女生。 — เธอเป็นผู้หญิง"},{"id":"亻","py":"rén","th":"ส่วนประกอบที่หมายถึงคน","kind":"component","level":1,"aliases":["ren2","ren"],"ex":"你是学生吗？ — คุณเป็นนักเรียนไหม"},{"id":"氵","py":"shuǐ","th":"ส่วนประกอบเกี่ยวกับน้ำ","kind":"component","level":1,"aliases":["shui3","shui"],"ex":"我喜欢喝水。 — ฉันชอบดื่มน้ำ"},{"id":"日","py":"rì","th":"ดวงอาทิตย์ / วัน","kind":"component","level":1,"aliases":["ri4","ri"],"ex":"今天是星期日。 — วันนี้เป็นวันอาทิตย์"},{"id":"心","py":"xīn","th":"หัวใจ / ใจ","kind":"component","level":1,"aliases":["xin1","xin"],"ex":"我很开心。 — ฉันมีความสุข"},{"id":"讠","py":"yán","th":"ส่วนประกอบเกี่ยวกับคำพูด","kind":"component","level":1,"aliases":["yan2","yan"],"ex":"请说中文。 — กรุณาพูดภาษาจีน"},{"id":"扌","py":"shǒu","th":"ส่วนประกอบเกี่ยวกับมือ","kind":"component","level":1,"aliases":["shou3","shou"],"ex":"我在打字。 — ฉันกำลังพิมพ์"},{"id":"艹","py":"cǎo","th":"ส่วนประกอบเกี่ยวกับพืช","kind":"component","level":1,"aliases":["cao3","cao"],"ex":"花很漂亮。 — ดอกไม้สวยมาก"},{"id":"吃","py":"chī","th":"กิน","kind":"char","level":1,"aliases":["chi1","chi"],"ex":"我喜欢吃米饭。 — ฉันชอบกินข้าว"},{"id":"喝","py":"hē","th":"ดื่ม","kind":"char","level":1,"aliases":["he1","he"],"ex":"我喝水。 — ฉันดื่มน้ำ"},{"id":"叫","py":"jiào","th":"ชื่อว่า / เรียก","kind":"char","level":1,"aliases":["jiao4","jiao"],"ex":"我叫小明。 — ฉันชื่อเสี่ยวหมิง"},{"id":"吗","py":"ma","th":"ไหม (คำลงท้ายคำถาม)","kind":"char","level":1,"aliases":["ma5","ma"],"ex":"你好吗？ — คุณสบายดีไหม"},{"id":"唱","py":"chàng","th":"ร้องเพลง","kind":"char","level":1,"aliases":["chang4","chang"],"ex":"她喜欢唱歌。 — เธอชอบร้องเพลง"},{"id":"听","py":"tīng","th":"ฟัง","kind":"char","level":1,"aliases":["ting1","ting"],"ex":"我听音乐。 — ฉันฟังเพลง"},{"id":"林","py":"lín","th":"กลุ่มต้นไม้ / ป่า","kind":"char","level":1,"aliases":["lin2","lin"],"ex":"这里有一片树林。 — ที่นี่มีป่าแห่งหนึ่ง"},{"id":"森","py":"sēn","th":"หนาแน่น (ใช้ในคำว่า 森林)","kind":"char","level":2,"aliases":["sen1","sen"],"ex":"森林里有很多树。 — ในป่ามีต้นไม้มากมาย"},{"id":"好","py":"hǎo","th":"ดี","kind":"char","level":1,"aliases":["hao3","hao"],"ex":"你好！ — สวัสดี"},{"id":"妈","py":"mā","th":"แม่","kind":"char","level":1,"aliases":["ma1","ma"],"ex":"我妈妈很好。 — แม่ของฉันสบายดี"},{"id":"她","py":"tā","th":"เธอ (ผู้หญิง)","kind":"char","level":1,"aliases":["ta1","ta"],"ex":"她是老师。 — เธอเป็นครู"},{"id":"你","py":"nǐ","th":"คุณ / เธอ","kind":"char","level":1,"aliases":["ni3","ni"],"ex":"你好吗？ — คุณสบายดีไหม"},{"id":"他","py":"tā","th":"เขา (ผู้ชาย)","kind":"char","level":1,"aliases":["ta1","ta"],"ex":"他是我的朋友。 — เขาเป็นเพื่อนของฉัน"},{"id":"们","py":"men","th":"ส่วนประกอบบอกพหูพจน์ของสรรพนาม","kind":"char","level":1,"aliases":["men5","men"],"ex":"我们一起学习。 — พวกเราเรียนด้วยกัน"},{"id":"住","py":"zhù","th":"อาศัยอยู่","kind":"char","level":1,"aliases":["zhu4","zhu"],"ex":"我住在曼谷。 — ฉันอาศัยอยู่กรุงเทพฯ"},{"id":"休","py":"xiū","th":"พัก","kind":"char","level":1,"aliases":["xiu1","xiu"],"ex":"我要休息。 — ฉันจะพัก"},{"id":"洗","py":"xǐ","th":"ล้าง / ซัก","kind":"char","level":1,"aliases":["xi3","xi"],"ex":"我要洗手。 — ฉันจะล้างมือ"},{"id":"河","py":"hé","th":"แม่น้ำ","kind":"char","level":2,"aliases":["he2","he"],"ex":"这条河很长。 — แม่น้ำสายนี้ยาวมาก"},{"id":"海","py":"hǎi","th":"ทะเล","kind":"char","level":2,"aliases":["hai3","hai"],"ex":"我喜欢大海。 — ฉันชอบทะเล"},{"id":"活","py":"huó","th":"มีชีวิต / ดำรงอยู่","kind":"char","level":2,"aliases":["huo2","huo"],"ex":"生活很有趣。 — ชีวิตน่าสนใจ"},{"id":"明","py":"míng","th":"สว่าง / ชัดเจน","kind":"char","level":1,"aliases":["ming2","ming"],"ex":"明天见！ — เจอกันพรุ่งนี้"},{"id":"时","py":"shí","th":"เวลา","kind":"char","level":1,"aliases":["shi2","shi"],"ex":"现在是什么时间？ — ตอนนี้เวลาอะไร"},{"id":"晚","py":"wǎn","th":"เย็น / ค่ำ","kind":"char","level":1,"aliases":["wan3","wan"],"ex":"晚上好。 — สวัสดีตอนเย็น"},{"id":"想","py":"xiǎng","th":"คิด / อยาก","kind":"char","level":1,"aliases":["xiang3","xiang"],"ex":"我想喝茶。 — ฉันอยากดื่มชา"},{"id":"忙","py":"máng","th":"ยุ่ง","kind":"char","level":1,"aliases":["mang2","mang"],"ex":"我今天很忙。 — วันนี้ฉันยุ่งมาก"},{"id":"情","py":"qíng","th":"ความรู้สึก / สภาพ","kind":"char","level":2,"aliases":["qing2","qing"],"ex":"他心情很好。 — เขาอารมณ์ดี"},{"id":"请","py":"qǐng","th":"กรุณา / เชิญ","kind":"char","level":1,"aliases":["qing3","qing"],"ex":"请进。 — เชิญเข้ามา"},{"id":"说","py":"shuō","th":"พูด","kind":"char","level":1,"aliases":["shuo1","shuo"],"ex":"我会说中文。 — ฉันพูดภาษาจีนได้"},{"id":"语","py":"yǔ","th":"ภาษา","kind":"char","level":2,"aliases":["yu3","yu"],"ex":"我在学外语。 — ฉันกำลังเรียนภาษาต่างประเทศ"},{"id":"话","py":"huà","th":"คำพูด / เรื่องที่พูด","kind":"char","level":1,"aliases":["hua4","hua"],"ex":"我想和你说话。 — ฉันอยากคุยกับคุณ"},{"id":"打","py":"dǎ","th":"ตี / โทร / ทำกิจกรรมบางอย่าง","kind":"char","level":1,"aliases":["da3","da"],"ex":"我打电话给你。 — ฉันโทรหาคุณ"},{"id":"找","py":"zhǎo","th":"หา / ค้นหา","kind":"char","level":1,"aliases":["zhao3","zhao"],"ex":"我在找手机。 — ฉันกำลังหาโทรศัพท์"},{"id":"提","py":"tí","th":"ยก / เสนอ","kind":"char","level":2,"aliases":["ti2","ti"],"ex":"请提出问题。 — กรุณาเสนอคำถาม"},{"id":"花","py":"huā","th":"ดอกไม้ / ใช้จ่าย","kind":"char","level":1,"aliases":["hua1","hua"],"ex":"这朵花很漂亮。 — ดอกไม้นี้สวยมาก"},{"id":"茶","py":"chá","th":"ชา","kind":"char","level":1,"aliases":["cha2","cha"],"ex":"我喜欢喝茶。 — ฉันชอบดื่มชา"},{"id":"药","py":"yào","th":"ยา","kind":"char","level":2,"aliases":["yao4","yao"],"ex":"请按时吃药。 — กรุณากินยาให้ตรงเวลา"},{"id":"手","py":"shǒu","th":"มือ","kind":"char","level":1,"aliases":["shou3","shou"],"ex":"请洗手。 — กรุณาล้างมือ"},{"id":"机","py":"jī","th":"เครื่องจักร / เครื่อง","kind":"char","level":1,"aliases":["ji1","ji"],"ex":"我的手机在这里。 — โทรศัพท์ฉันอยู่ที่นี่"},{"id":"电","py":"diàn","th":"ไฟฟ้า","kind":"char","level":1,"aliases":["dian4","dian"],"ex":"电脑很好用。 — คอมพิวเตอร์ใช้ง่าย"},{"id":"脑","py":"nǎo","th":"สมอง","kind":"char","level":2,"aliases":["nao3","nao"],"ex":"多动动脑。 — ลองใช้สมองคิดให้มากขึ้น"},{"id":"朋","py":"péng","th":"มิตร (ใช้ใน 朋友)","kind":"char","level":1,"aliases":["peng2","peng"],"ex":"朋友来了。 — เพื่อนมาแล้ว"},{"id":"友","py":"yǒu","th":"มิตร / เพื่อน","kind":"char","level":1,"aliases":["you3","you"],"ex":"我们很友好。 — พวกเราเป็นมิตรกัน"},{"id":"是","py":"shì","th":"เป็น / คือ / ใช่","kind":"char","level":1,"aliases":["shi4","shi"],"ex":"我是学生。 — ฉันเป็นนักเรียน"},{"id":"事","py":"shì","th":"เรื่อง / เหตุการณ์","kind":"char","level":1,"aliases":["shi4","shi"],"ex":"有什么事？ — มีเรื่องอะไร"},{"id":"市","py":"shì","th":"เมือง / ตลาด","kind":"char","level":2,"aliases":["shi4","shi"],"ex":"我去市中心。 — ฉันไปใจกลางเมือง"},{"id":"试","py":"shì","th":"ลอง / ทดลอง","kind":"char","level":2,"aliases":["shi4","shi"],"ex":"你可以试试。 — คุณลองดูได้"},{"id":"室","py":"shì","th":"ห้อง","kind":"char","level":2,"aliases":["shi4","shi"],"ex":"这是教室。 — นี่คือห้องเรียน"},{"id":"视","py":"shì","th":"มอง / ดู","kind":"char","level":2,"aliases":["shi4","shi"],"ex":"我在看电视。 — ฉันกำลังดูโทรทัศน์"},{"id":"十","py":"shí","th":"สิบ","kind":"char","level":1,"aliases":["shi2","shi"],"ex":"十个人。 — สิบคน"},{"id":"石","py":"shí","th":"หิน","kind":"char","level":2,"aliases":["shi2","shi"],"ex":"这里有一块石头。 — ที่นี่มีหินก้อนหนึ่ง"},{"id":"碰","py":"pèng","th":"สัมผัส / ชน","kind":"char","level":2,"aliases":["peng4","peng"],"ex":"别碰！ — อย่าแตะ"},{"id":"我","py":"wǒ","th":"ฉัน","kind":"char","level":1,"aliases":["wo3","wo"],"ex":"我是学生。 — ฉันเป็นนักเรียน"},{"id":"学","py":"xué","th":"เรียน","kind":"char","level":1,"aliases":["xue2","xue"],"ex":"我学中文。 — ฉันเรียนภาษาจีน"},{"id":"生","py":"shēng","th":"เกิด / ชีวิต / นักเรียนในคำประสม","kind":"char","level":1,"aliases":["sheng1","sheng"],"ex":"我是学生。 — ฉันเป็นนักเรียน"},{"id":"工","py":"gōng","th":"งาน / แรงงาน","kind":"char","level":1,"aliases":["gong1","gong"],"ex":"我去工作。 — ฉันไปทำงาน"},{"id":"作","py":"zuò","th":"ทำ / สร้าง","kind":"char","level":1,"aliases":["zuo4","zuo"],"ex":"我在工作。 — ฉันกำลังทำงาน"},{"id":"会","py":"huì","th":"สามารถ / จะ / ประชุม","kind":"char","level":1,"aliases":["hui4","hui"],"ex":"我会说中文。 — ฉันพูดภาษาจีนได้"},{"id":"开","py":"kāi","th":"เปิด / เริ่ม","kind":"char","level":1,"aliases":["kai1","kai"],"ex":"我们开始吧。 — พวกเราเริ่มกันเถอะ"},{"id":"议","py":"yì","th":"หารือ / ปรึกษา","kind":"char","level":2,"aliases":["yi4","yi"],"ex":"会议几点开始？ — การประชุมเริ่มกี่โมง"},{"id":"项","py":"xiàng","th":"รายการ / โครงการ","kind":"char","level":2,"aliases":["xiang4","xiang"],"ex":"这个项目很重要。 — โครงการนี้สำคัญมาก"},{"id":"目","py":"mù","th":"ตา / รายการ","kind":"char","level":2,"aliases":["mu4","mu"],"ex":"项目进展顺利。 — โครงการคืบหน้าอย่างราบรื่น"},{"id":"计","py":"jì","th":"นับ / วางแผน","kind":"char","level":2,"aliases":["ji4","ji"],"ex":"这是我们的计划。 — นี่คือแผนของพวกเรา"},{"id":"划","py":"huà","th":"กำหนด / ขีด / วางแผน","kind":"char","level":2,"aliases":["hua4","hua"],"ex":"计划已经确定。 — แผนได้รับการยืนยันแล้ว"},{"id":"预","py":"yù","th":"ล่วงหน้า","kind":"char","level":3,"aliases":["yu4","yu"],"ex":"预算已经批准。 — งบประมาณได้รับอนุมัติแล้ว"},{"id":"算","py":"suàn","th":"คำนวณ","kind":"char","level":2,"aliases":["suan4","suan"],"ex":"我们需要计算成本。 — เราต้องคำนวณต้นทุน"},{"id":"效","py":"xiào","th":"ผล / ประสิทธิผล","kind":"char","level":3,"aliases":["xiao4","xiao"],"ex":"这个活动很有效。 — กิจกรรมนี้ได้ผลดี"},{"id":"率","py":"lǜ","th":"อัตรา","kind":"char","level":3,"aliases":["lv4","lv"],"ex":"转化率提高了。 — อัตราการเปลี่ยนเป็นลูกค้าสูงขึ้น"},{"id":"转","py":"zhuǎn","th":"เปลี่ยน / หมุน","kind":"char","level":2,"aliases":["zhuan3","zhuan"],"ex":"需要转变策略。 — ต้องเปลี่ยนกลยุทธ์"},{"id":"化","py":"huà","th":"เปลี่ยนแปลง","kind":"char","level":2,"aliases":["hua4","hua"],"ex":"市场变化很快。 — ตลาดเปลี่ยนแปลงเร็วมาก"},{"id":"策","py":"cè","th":"กลยุทธ์ / แผน","kind":"char","level":3,"aliases":["ce4","ce"],"ex":"这是新的策略。 — นี่คือกลยุทธ์ใหม่"},{"id":"略","py":"lüè","th":"แผนโดยย่อ / กลยุทธ์","kind":"char","level":3,"aliases":["lve4","lve"],"ex":"策略需要调整。 — กลยุทธ์ต้องปรับ"},{"id":"你们","py":"nǐmen","th":"พวกคุณ","kind":"word","level":1,"aliases":["nimen3","nimen"],"ex":"你们好！ — สวัสดีทุกคน"},{"id":"我们","py":"wǒmen","th":"พวกเรา","kind":"word","level":1,"aliases":["women3","women"],"ex":"我们一起学习。 — พวกเราเรียนด้วยกัน"},{"id":"他们","py":"tāmen","th":"พวกเขา","kind":"word","level":1,"aliases":["tamen1","tamen"],"ex":"他们在工作。 — พวกเขากำลังทำงาน"},{"id":"朋友","py":"péngyou","th":"เพื่อน","kind":"word","level":1,"aliases":["pengyou2","pengyou"],"ex":"他是我的朋友。 — เขาเป็นเพื่อนของฉัน"},{"id":"你好","py":"nǐ hǎo","th":"สวัสดี","kind":"word","level":1,"aliases":["ni3hao3","nihao"],"ex":"你好，很高兴认识你。 — สวัสดี ยินดีที่ได้รู้จัก"},{"id":"你好吗？","py":"nǐ hǎo ma","th":"คุณสบายดีไหม","kind":"phrase","level":1,"aliases":["ni3hao3ma5","nihaoma"],"ex":"你好吗？ — คุณสบายดีไหม"},{"id":"你们好","py":"nǐmen hǎo","th":"สวัสดีพวกคุณ","kind":"phrase","level":1,"aliases":["nimen3hao3","nimenhao"],"ex":"你们好！ — สวัสดีทุกคน"},{"id":"手机","py":"shǒujī","th":"โทรศัพท์มือถือ","kind":"word","level":1,"aliases":["shouji3","shouji"],"ex":"我的手机在桌子上。 — มือถือฉันอยู่บนโต๊ะ"},{"id":"手机壳","py":"shǒujīké","th":"เคสโทรศัพท์","kind":"word","level":2,"aliases":["shoujike3","shoujike"],"ex":"这个手机壳很好看。 — เคสโทรศัพท์อันนี้สวยมาก"},{"id":"电脑","py":"diànnǎo","th":"คอมพิวเตอร์","kind":"word","level":1,"aliases":["diannao4","diannao"],"ex":"我用电脑工作。 — ฉันใช้คอมพิวเตอร์ทำงาน"},{"id":"电话","py":"diànhuà","th":"โทรศัพท์ / สายโทรศัพท์","kind":"word","level":1,"aliases":["dianhua4","dianhua"],"ex":"请给我打电话。 — กรุณาโทรหาฉัน"},{"id":"打电话","py":"dǎ diànhuà","th":"โทรศัพท์หา","kind":"phrase","level":1,"aliases":["da3dianhua4","dadianhua"],"ex":"我给妈妈打电话。 — ฉันโทรหาแม่"},{"id":"喝水","py":"hē shuǐ","th":"ดื่มน้ำ","kind":"phrase","level":1,"aliases":["he1shui3","heshui"],"ex":"记得喝水。 — อย่าลืมดื่มน้ำ"},{"id":"喝茶","py":"hē chá","th":"ดื่มชา","kind":"phrase","level":1,"aliases":["he1cha2","hecha"],"ex":"我们一起喝茶。 — พวกเราดื่มชาด้วยกัน"},{"id":"唱歌","py":"chànggē","th":"ร้องเพลง","kind":"word","level":1,"aliases":["changge4","changge"],"ex":"我喜欢唱歌。 — ฉันชอบร้องเพลง"},{"id":"森林","py":"sēnlín","th":"ป่าไม้","kind":"word","level":2,"aliases":["senlin1","senlin"],"ex":"森林里有很多树。 — ในป่ามีต้นไม้มากมาย"},{"id":"学生","py":"xuésheng","th":"นักเรียน","kind":"word","level":1,"aliases":["xuesheng2","xuesheng"],"ex":"我是学生。 — ฉันเป็นนักเรียน"},{"id":"学习","py":"xuéxí","th":"เรียน / ศึกษา","kind":"word","level":1,"aliases":["xuexi2","xuexi"],"ex":"我学习中文。 — ฉันเรียนภาษาจีน"},{"id":"中文","py":"zhōngwén","th":"ภาษาจีน","kind":"word","level":1,"aliases":["zhongwen1","zhongwen"],"ex":"我学习中文。 — ฉันเรียนภาษาจีน"},{"id":"汉语","py":"hànyǔ","th":"ภาษาจีน (ภาษาฮั่น)","kind":"word","level":2,"aliases":["hanyu4","hanyu"],"ex":"我在学汉语。 — ฉันกำลังเรียนภาษาจีน"},{"id":"说中文","py":"shuō zhōngwén","th":"พูดภาษาจีน","kind":"phrase","level":1,"aliases":["shuo1zhongwen1","shuozhongwen"],"ex":"我会说中文。 — ฉันพูดภาษาจีนได้"},{"id":"我会说中文","py":"wǒ huì shuō zhōngwén","th":"ฉันพูดภาษาจีนได้","kind":"phrase","level":1,"aliases":["wo3hui4shuo1zhongwen1","wohuishuozhongwen"],"ex":"我会说中文。 — ฉันพูดภาษาจีนได้"},{"id":"工作","py":"gōngzuò","th":"ทำงาน / งาน","kind":"word","level":1,"aliases":["gongzuo1","gongzuo"],"ex":"我在工作。 — ฉันกำลังทำงาน"},{"id":"工作日","py":"gōngzuòrì","th":"วันทำงาน","kind":"word","level":2,"aliases":["gongzuori1","gongzuori"],"ex":"工作日请联系我。 — กรุณาติดต่อฉันในวันทำงาน"},{"id":"休息","py":"xiūxi","th":"พักผ่อน","kind":"word","level":1,"aliases":["xiuxi1","xiuxi"],"ex":"我想休息一下。 — ฉันอยากพักสักหน่อย"},{"id":"休息一下","py":"xiūxi yíxià","th":"พักสักหน่อย","kind":"phrase","level":1,"aliases":["xiuxi1yixia2","xiuxiyixia"],"ex":"我们休息一下吧。 — พวกเราพักกันสักหน่อยเถอะ"},{"id":"时间","py":"shíjiān","th":"เวลา","kind":"word","level":1,"aliases":["shijian2","shijian"],"ex":"你有时间吗？ — คุณมีเวลาไหม"},{"id":"有时间","py":"yǒu shíjiān","th":"มีเวลา","kind":"phrase","level":1,"aliases":["you3shijian2","youshijian"],"ex":"我今天有时间。 — วันนี้ฉันมีเวลา"},{"id":"你有时间吗？","py":"nǐ yǒu shíjiān ma","th":"คุณมีเวลาไหม","kind":"phrase","level":2,"aliases":["ni3you3shijian2ma5","niyoushijianma"],"ex":"你有时间吗？ — คุณมีเวลาไหม"},{"id":"明天","py":"míngtiān","th":"พรุ่งนี้","kind":"word","level":1,"aliases":["mingtian2","mingtian"],"ex":"明天见！ — เจอกันพรุ่งนี้"},{"id":"明天见","py":"míngtiān jiàn","th":"เจอกันพรุ่งนี้","kind":"phrase","level":1,"aliases":["mingtian2jian4","mingtianjian"],"ex":"明天见。 — เจอกันพรุ่งนี้"},{"id":"今天","py":"jīntiān","th":"วันนี้","kind":"word","level":1,"aliases":["jintian1","jintian"],"ex":"今天很忙。 — วันนี้ยุ่งมาก"},{"id":"开心","py":"kāixīn","th":"มีความสุข","kind":"word","level":1,"aliases":["kaixin1","kaixin"],"ex":"我很开心。 — ฉันมีความสุข"},{"id":"心情","py":"xīnqíng","th":"อารมณ์ / ความรู้สึก","kind":"word","level":2,"aliases":["xinqing1","xinqing"],"ex":"我今天心情很好。 — วันนี้ฉันอารมณ์ดี"},{"id":"心情很好","py":"xīnqíng hěn hǎo","th":"อารมณ์ดีมาก","kind":"phrase","level":2,"aliases":["xinqing1hen3hao3","xinqinghenhao"],"ex":"我今天心情很好。 — วันนี้ฉันอารมณ์ดีมาก"},{"id":"请问","py":"qǐngwèn","th":"ขอถามหน่อย","kind":"word","level":1,"aliases":["qingwen3","qingwen"],"ex":"请问，你叫什么名字？ — ขอถามหน่อย คุณชื่ออะไร"},{"id":"请问一下","py":"qǐngwèn yíxià","th":"ขอสอบถามสักนิด","kind":"phrase","level":2,"aliases":["qingwen3yixia2","qingwenyixia"],"ex":"我想请问一下。 — ฉันอยากขอถามสักนิด"},{"id":"说话","py":"shuōhuà","th":"พูดคุย","kind":"word","level":1,"aliases":["shuohua1","shuohua"],"ex":"请小声说话。 — กรุณาพูดเบา ๆ"},{"id":"普通话","py":"pǔtōnghuà","th":"ภาษาจีนกลาง","kind":"word","level":2,"aliases":["putonghua3","putonghua"],"ex":"她会说普通话。 — เธอพูดภาษาจีนกลางได้"},{"id":"会议","py":"huìyì","th":"การประชุม","kind":"word","level":2,"aliases":["huiyi4","huiyi"],"ex":"会议几点开始？ — การประชุมเริ่มกี่โมง"},{"id":"开会","py":"kāihuì","th":"ประชุม","kind":"word","level":2,"aliases":["kaihui1","kaihui"],"ex":"我们下午开会。 — พวกเราประชุมตอนบ่าย"},{"id":"开会时间","py":"kāihuì shíjiān","th":"เวลาประชุม","kind":"phrase","level":2,"aliases":["kaihui1shijian2","kaihuishijian"],"ex":"请确认开会时间。 — กรุณายืนยันเวลาประชุม"},{"id":"确认","py":"quèrèn","th":"ยืนยัน","kind":"word","level":2,"aliases":["queren4","queren"],"ex":"请确认时间。 — กรุณายืนยันเวลา"},{"id":"确认时间","py":"quèrèn shíjiān","th":"ยืนยันเวลา","kind":"phrase","level":2,"aliases":["queren4shijian2","querenshijian"],"ex":"请确认时间。 — กรุณายืนยันเวลา"},{"id":"项目","py":"xiàngmù","th":"โครงการ","kind":"word","level":2,"aliases":["xiangmu4","xiangmu"],"ex":"这个项目很重要。 — โครงการนี้สำคัญมาก"},{"id":"项目进度","py":"xiàngmù jìndù","th":"ความคืบหน้าของโครงการ","kind":"phrase","level":2,"aliases":["xiangmu4jindu4","xiangmujindu"],"ex":"请更新项目进度。 — กรุณาอัปเดตความคืบหน้าโครงการ"},{"id":"计划","py":"jìhuà","th":"แผน / วางแผน","kind":"word","level":2,"aliases":["jihua4","jihua"],"ex":"我们需要一个计划。 — พวกเราต้องการแผน"},{"id":"营销计划","py":"yíngxiāo jìhuà","th":"แผนการตลาด","kind":"phrase","level":3,"aliases":["yingxiao2jihua4","yingxiaojihua"],"ex":"我们正在制定营销计划。 — พวกเรากำลังจัดทำแผนการตลาด"},{"id":"预算","py":"yùsuàn","th":"งบประมาณ","kind":"word","level":3,"aliases":["yusuan4","yusuan"],"ex":"预算需要调整。 — ต้องปรับงบประมาณ"},{"id":"营销预算","py":"yíngxiāo yùsuàn","th":"งบการตลาด","kind":"phrase","level":3,"aliases":["yingxiao2yusuan4","yingxiaoyusuan"],"ex":"营销预算已经批准。 — งบการตลาดได้รับอนุมัติแล้ว"},{"id":"市场","py":"shìchǎng","th":"ตลาด","kind":"word","level":2,"aliases":["shichang4","shichang"],"ex":"我们研究市场。 — พวกเราศึกษาตลาด"},{"id":"市场分析","py":"shìchǎng fēnxī","th":"การวิเคราะห์ตลาด","kind":"phrase","level":3,"aliases":["shichang4fenxi1","shichangfenxi"],"ex":"我们需要市场分析。 — เราต้องการการวิเคราะห์ตลาด"},{"id":"客户","py":"kèhù","th":"ลูกค้า","kind":"word","level":2,"aliases":["kehu4","kehu"],"ex":"我们重视客户。 — พวกเราให้ความสำคัญกับลูกค้า"},{"id":"客户反馈","py":"kèhù fǎnkuì","th":"ความคิดเห็นจากลูกค้า","kind":"phrase","level":3,"aliases":["kehu4fankui3","kehufankui"],"ex":"我们收集客户反馈。 — พวกเราเก็บความคิดเห็นจากลูกค้า"},{"id":"品牌","py":"pǐnpái","th":"แบรนด์","kind":"word","level":2,"aliases":["pinpai3","pinpai"],"ex":"这是一个新品牌。 — นี่คือแบรนด์ใหม่"},{"id":"品牌策略","py":"pǐnpái cèlüè","th":"กลยุทธ์แบรนด์","kind":"phrase","level":3,"aliases":["pinpai3celve4","pinpaicelve"],"ex":"品牌策略需要调整。 — กลยุทธ์แบรนด์ต้องปรับ"},{"id":"营销","py":"yíngxiāo","th":"การตลาด","kind":"word","level":3,"aliases":["yingxiao2","yingxiao"],"ex":"我负责营销工作。 — ฉันรับผิดชอบงานการตลาด"},{"id":"数字营销","py":"shùzì yíngxiāo","th":"การตลาดดิจิทัล","kind":"phrase","level":3,"aliases":["shuzi4yingxiao2","shuziyingxiao"],"ex":"数字营销很重要。 — การตลาดดิจิทัลสำคัญมาก"},{"id":"数据","py":"shùjù","th":"ข้อมูล / ดาต้า","kind":"word","level":2,"aliases":["shuju4","shuju"],"ex":"我们需要数据。 — พวกเราต้องการข้อมูล"},{"id":"数据分析","py":"shùjù fēnxī","th":"การวิเคราะห์ข้อมูล","kind":"phrase","level":3,"aliases":["shuju4fenxi1","shujufenxi"],"ex":"数据分析很重要。 — การวิเคราะห์ข้อมูลสำคัญมาก"},{"id":"转化","py":"zhuǎnhuà","th":"เปลี่ยนเป็นผลลัพธ์ / คอนเวอร์ชัน","kind":"word","level":3,"aliases":["zhuanhua3","zhuanhua"],"ex":"我们要提高转化。 — พวกเราต้องเพิ่มคอนเวอร์ชัน"},{"id":"转化率","py":"zhuǎnhuàlǜ","th":"อัตราคอนเวอร์ชัน","kind":"word","level":3,"aliases":["zhuanhualv3","zhuanhualv"],"ex":"转化率提高了。 — อัตราคอนเวอร์ชันสูงขึ้น"},{"id":"转化率分析","py":"zhuǎnhuàlǜ fēnxī","th":"การวิเคราะห์อัตราคอนเวอร์ชัน","kind":"phrase","level":3,"aliases":["zhuanhualv3fenxi1","zhuanhualvfenxi"],"ex":"我们要做转化率分析。 — เราต้องวิเคราะห์อัตราคอนเวอร์ชัน"},{"id":"效率","py":"xiàolǜ","th":"ประสิทธิภาพ","kind":"word","level":3,"aliases":["xiaolv4","xiaolv"],"ex":"我们要提高效率。 — พวกเราต้องเพิ่มประสิทธิภาพ"},{"id":"工作效率","py":"gōngzuò xiàolǜ","th":"ประสิทธิภาพการทำงาน","kind":"phrase","level":3,"aliases":["gongzuo1xiaolv4","gongzuoxiaolv"],"ex":"我们要提高工作效率。 — พวกเราต้องเพิ่มประสิทธิภาพการทำงาน"},{"id":"策略","py":"cèlüè","th":"กลยุทธ์","kind":"word","level":3,"aliases":["celve4","celve"],"ex":"这项策略很有效。 — กลยุทธ์นี้ได้ผลดี"},{"id":"策略调整","py":"cèlüè tiáozhěng","th":"การปรับกลยุทธ์","kind":"phrase","level":3,"aliases":["celve4tiaozheng2","celvetiaozheng"],"ex":"我们正在进行策略调整。 — พวกเรากำลังปรับกลยุทธ์"}];
 const family={"口":["吃","喝","叫","吗","唱","听"],"木":["林","森","休"],"女":["好","妈","她"],"亻":["你","他","们","住","休"],"氵":["洗","河","海","活"],"日":["明","时","晚"],"心":["想","忙","情"],"讠":["请","说","语","话"],"扌":["打","找","提"],"艹":["花","茶","药"]};
 const build={"你":["你好","你们","你好吗？"],"们":["你们","我们","他们"],"我":["我们"],"他":["他们"],"朋":["朋友"],"友":["朋友"],"手":["手机","手机壳"],"机":["手机"],"电":["电话","电脑"],"脑":["电脑"],"话":["电话","说话","普通话"],"打":["打电话"],"喝":["喝水","喝茶"],"茶":["喝茶"],"唱":["唱歌"],"森":["森林"],"林":["森林"],"学":["学习","学生"],"生":["学生"],"说":["说中文","说话"],"工":["工作","工作日"],"作":["工作","工作日"],"休":["休息"],"时":["时间"],"明":["明天"],"心":["开心","心情"],"请":["请问"],"会":["会议","开会"],"开":["开会"],"议":["会议"],"项":["项目"],"目":["项目"],"计":["计划"],"划":["计划"],"预":["预算"],"算":["预算"],"市":["市场"],"转":["转化","转化率"],"化":["转化","转化率"],"率":["效率","转化率"],"策":["策略"],"略":["策略"]};
@@ -274,7 +320,7 @@ async function loadHSK(){
  if(hskLoaded||hskLoading)return;
  hskLoading=true;
  const help=document.getElementById('level-help');
- if(help)help.textContent='กำลังโหลดรายการ HSK 1–6…';
+ if(help)help.textContent='กำลังโหลดคลังศัพท์…';
  try{
   const all=await Promise.all(Array.from({length:6},(_,i)=>fetch(HSK_SOURCE+(i+1)+'.json').then(r=>{if(!r.ok)throw Error('HSK '+(i+1));return r.json()})));
   all.forEach((entries,i)=>entries.forEach(e=>{
@@ -287,10 +333,10 @@ async function loadHSK(){
    D.push(d);byId[id]=d;
   }));
   hskLoaded=true;hskAvailable=true;createHskLinks();
-  if(help)help.textContent='เลือกคำตั้งต้นที่มีความสัมพันธ์ · กราฟอาจแสดงศัพท์ข้ามระดับเพื่อเชื่อมคำ · EN หมายถึงคำที่รอตรวจแปลไทย';
+  if(help)help.textContent='Beginner: HSK 1–3 · Intermediate: HSK 4–6 · Advanced: อยู่ระหว่างจัดชุดข้อมูล HSK 7–9 · กราฟอาจเชื่อมคำข้ามระดับ';
  }catch(err){
   hskAvailable=false;
-  if(help)help.textContent='ยังโหลดคลัง HSK ออนไลน์ไม่ได้ — แสดงเฉพาะศัพท์ตัวอย่างที่อยู่ในไฟล์';
+  if(help)help.textContent='โหลดคลังศัพท์ออนไลน์ไม่ได้ — ใช้คำศัพท์ตัวอย่างที่อยู่ในไฟล์';
  }finally{hskLoading=false; if(document.body.classList.contains('in-module')){seeds=Object.keys(modeConfig.map).filter(id=>byId[id]);list();}}
 }
 
@@ -300,10 +346,11 @@ let modeConfig=configs[currentMode];
 const $=id=>document.getElementById(id);
 const strip=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ü/g,'v').replace(/[\s'’?!？。，]/g,'');
 const keys=d=>[d.id,d.py,d.th,d.numeric||'',...(d.aliases||[])];
+const farmLevel=d=>!d?1:(d.hskLevel?d.hskLevel<=3?1:d.hskLevel<=6?2:3:Math.min(3,Math.max(1,d.level||1)));
 function found(d,q){if(!q)return true;return keys(d).some(x=>strip(x).includes(strip(q)));}
 let seeds=[];
-function selectMode(m){loadHSK();currentMode=m;modeConfig=configs[m];seeds=Object.keys(modeConfig.map).filter(id=>byId[id]);$('mode-title').textContent=modeConfig.title;$('viewer-brand').textContent=modeConfig.title;$('mode-sub').textContent=modeConfig.sub;$('mode-desc').textContent=modeConfig.desc;$('query').value='';$('viewer').classList.add('hidden');$('picker').classList.remove('hidden');document.body.classList.add('in-module');list();window.scrollTo(0,0)}
-document.querySelectorAll('#home .tile').forEach(b=>b.onclick=()=>selectMode(b.dataset.mode));
+function selectMode(m){$('breakdown-screen').classList.add('hidden');$('practice-screen').classList.add('hidden');loadHSK();currentMode=m;modeConfig=configs[m];seeds=Object.keys(modeConfig.map).filter(id=>byId[id]);$('mode-title').textContent=modeConfig.title;$('viewer-brand').textContent=modeConfig.title;$('mode-sub').textContent=modeConfig.sub;$('mode-desc').textContent=modeConfig.desc;$('query').value='';$('viewer').classList.add('hidden');$('picker').classList.remove('hidden');document.body.classList.add('in-module');list();window.scrollTo(0,0)}
+document.querySelectorAll('#home .tile').forEach(b=>b.onclick=()=>{if(b.dataset.mode==='breakdown')showBreakdown();else if(b.dataset.mode==='practice')showPractice();else selectMode(b.dataset.mode)});
 $('to-home').onclick=()=>{document.body.classList.remove('in-module');$('viewer').classList.add('hidden');$('picker').classList.remove('hidden');window.scrollTo(0,0)};
 
 function list(){
@@ -313,19 +360,19 @@ function list(){
   const d=byId[id];if(!found(d,q))return false;
   if(q && d.id.includes(q))return true;
   if(!hskAvailable)return true;
-  if(currentMode==='family')return (modeConfig.map[id]||[]).some(x=>byId[x]?.hskLevel===currentLevel);
-  if(d.hskLevel===currentLevel)return true;
+  if(currentMode==='family')return (modeConfig.map[id]||[]).some(x=>farmLevel(byId[x])===currentLevel);
+  if(farmLevel(d)===currentLevel)return true;
   // Search may find a root from an earlier level which leads into selected HSK level.
-  return (modeConfig.map[id]||[]).some(x=>byId[x]?.hskLevel===currentLevel);
+  return (modeConfig.map[id]||[]).some(x=>farmLevel(byId[x])===currentLevel);
  });
  const results=matching.slice(0,450);
- $('count').textContent=`${matching.length} คำที่มีความเชื่อมโยง · HSK ${currentLevel}${hskAvailable?'':' (ข้อมูลทดลอง)'}`;
+ $('count').textContent=`${matching.length} คำที่มีความเชื่อมโยง · ${['','Beginner','Intermediate','Advanced'][currentLevel]}${hskAvailable?'':' (ข้อมูลทดลอง)'}`;
  $('words').replaceChildren();
  results.forEach(id=>{const d=byId[id],b=document.createElement('button');b.className='word';b.type='button';b.innerHTML='<div class="han"></div><div class="pinyin"></div><div class="thai"></div>';
  b.children[0].textContent=d.id;b.children[1].textContent=d.py;
  b.children[2].textContent=(d.englishFallback?'EN · ':'')+d.th;
  b.setAttribute('aria-label',d.id+' '+d.py+' '+d.th);b.onclick=()=>openGraph(d.id);$('words').append(b)});
- if(!results.length){const p=document.createElement('p');p.className='empty';p.textContent='ยังไม่มีความเชื่อมโยงที่ตรวจพบในระดับนี้ ลองค้นคำอื่นหรือเปลี่ยน HSK';$('words').append(p)}
+ if(!results.length){const p=document.createElement('p');p.className='empty';p.textContent='ยังไม่มีความเชื่อมโยงที่ตรวจพบในระดับนี้ ลองค้นคำอื่นหรือเปลี่ยนระดับ';$('words').append(p)}
 }
 document.querySelectorAll('.level-option').forEach(b=>b.addEventListener('click',()=>{currentLevel=Number(b.dataset.level);document.querySelectorAll('.level-option').forEach(x=>x.classList.toggle('active',x===b));list()}));
 $('query').addEventListener('input',list);list();
@@ -363,134 +410,154 @@ function textLines(parent,arr,y,font,color,step=18,weight=500){
 }
 function draw(){
  cancelAnimationFrame(bubbleRAF);
- const {edges,ids}=paths(),coords={},levels={[seed]:0},queue=[seed];
- while(queue.length){const id=queue.shift();for(const [a,b] of edges){if(a===id&&levels[b]===undefined){levels[b]=levels[id]+1;queue.push(b)}}}
- if(currentMode==='expand'){
-  const cols={};ids.forEach(id=>(cols[levels[id]]??=[]).push(id));
-  const mx=Math.max(1,...Object.values(levels));
-  Object.entries(cols).forEach(([depth,arr])=>arr.forEach((id,i)=>{
-   coords[id]={x:172+Number(depth)*Math.min(250,520/mx),y:260+(i-(arr.length-1)/2)*Math.min(160,330/Math.max(1,arr.length-1))};
-  }));
- }else{
-  coords[seed]={x:450,y:260};const others=ids.filter(x=>x!==seed);
-  others.forEach((id,i)=>{const a=-Math.PI/2+i*2*Math.PI/others.length,r=others.length<=2?195:others.length>=5?235:223;coords[id]={x:450+r*Math.cos(a),y:260+r*.79*Math.sin(a)}});
- }
+ const {edges,ids}=paths();
  const svg=$('viz'),scene=$('scene');
- svg.setAttribute('viewBox',window.innerWidth<600?'125 0 650 520':'0 0 900 520');
  scene.replaceChildren();
+ const isTree=currentMode==='expand';
  const defs=svgEl('defs'),shadow=svgEl('filter',{id:'softShadow',x:'-60%',y:'-60%',width:'220%',height:'220%'});
- shadow.append(svgEl('feDropShadow',{dx:0,dy:6,stdDeviation:9,'flood-color':'#a37f99','flood-opacity':'.13'}));defs.append(shadow);scene.append(defs);
- const world=svgEl('g',{transform:`translate(${panX} ${panY}) translate(450 260) scale(${scale}) translate(-450 -260)`});scene.append(world);
- visualEdges=[];visualNodes=[];
- for(const [a,b] of edges){
-  const line=svgEl('path',{fill:'none',stroke:currentMode==='expand'?'#add7c5':currentMode==='build'?'#c8b6e6':'#e2b9cf','stroke-width':currentMode==='expand'?4:3,'stroke-linecap':'round',opacity:detailOpen?'.32':'.72'});
-  world.append(line);visualEdges.push({a,b,line});
- }
- ids.forEach((id,i)=>{
-  const d=byId[id],root=id===seed,isExpanded=detailOpen&&selected===id;
-  const baseW=Math.max(86,52+id.length*34),baseH=88;
-  const baseR=id.length>2?59:id.length>1?54:49;
-  const expandedR=121,expandedW=Math.max(220,Math.min(290,160+id.length*12)),expandedH=currentMode==='expand'?146:218;
-  const fill=root?(currentMode==='expand'?'#b8ddca':'#f4bed5'):(currentMode==='expand'?'#d3eddf':currentMode==='build'?'#e6dcfa':'#f6dcea');
-  const color=currentMode==='expand'?'#527c69':currentMode==='build'?'#76618f':'#81536e';
-  const group=svgEl('g',{role:'button',tabindex:'0','aria-label':`${id} ${d.py} ${d.th}`,style:'cursor:pointer'});
-  const bubble=svgEl('g',{class:isExpanded?'expanded-bubble':'bubble-enter',style:`--enter-delay:${Math.min(i*.06,.32)}s`});
-  group.append(bubble);
-  if(isExpanded){
-   if(currentMode==='expand'){
-    bubble.append(svgEl('rect',{x:-expandedW/2,y:-expandedH/2,width:expandedW,height:expandedH,rx:expandedH/2,fill:'#fff5fa',stroke:'#fff','stroke-width':3,filter:'url(#softShadow)'}));
-   }else{
-    bubble.append(svgEl('circle',{r:expandedR,fill:'#fff5fa',stroke:'#fff','stroke-width':3,filter:'url(#softShadow)'}));
-   }
-   bubble.append(svgEl('ellipse',{cx:-45,cy:currentMode==='expand'?-48:-71,rx:26,ry:9,fill:'#fff',opacity:'.76',transform:'rotate(-26 -45 -71)'}));
-   if(currentMode==='expand'){
-    bubble.append(svgEl('text',{'text-anchor':'middle',y:-28,'font-size':d.id.length>5?23:31,'font-weight':700,fill:color},id));
-    bubble.append(svgEl('text',{'text-anchor':'middle',y:2,'font-size':17,fill:'#789c89'},d.py));
-    textLines(bubble,linesOf(d.th,d.englishFallback?24:16,2),30,d.englishFallback?12:16,color,17,550);
-   }else{
-    bubble.append(svgEl('text',{'text-anchor':'middle',y:-63,'font-size':d.id.length>5?22:30,'font-weight':700,fill:color},id));
-    bubble.append(svgEl('text',{'text-anchor':'middle',y:-38,'font-size':16,fill:'#9f7895'},d.py));
-    textLines(bubble,linesOf(d.th,d.englishFallback?23:15,2),-14,d.englishFallback?12:15,color,16,600);
-    if(d.ex)bubble.append(svgEl('line',{x1:-80,x2:80,y1:20,y2:20,stroke:'#e8cfdf','stroke-width':1.3}));
-    const parts=(d.ex||'').split('—');
-    const zh=linesOf((parts[0]||'').trim(),12,2),th=linesOf(parts.slice(1).join('—').trim(),17,2);
-    textLines(bubble,zh,45,13,color,16,550);
-    textLines(bubble,th,zh.length===1?72:77,11,'#967b8b',14,450);
-   }
-  }else if(currentMode==='expand'){
-   bubble.append(svgEl('rect',{x:-baseW/2,y:-baseH/2,width:baseW,height:baseH,rx:baseH/2,fill,stroke:'#fff','stroke-width':3,filter:'url(#softShadow)'}));
-   bubble.append(svgEl('text',{'text-anchor':'middle',y:10,'font-size':id.length>=4?25:id.length>2?29:36,'font-weight':600,fill:color},id));
-  }else{
-   bubble.append(svgEl('circle',{r:baseR,fill,stroke:'#fff','stroke-width':3,filter:'url(#softShadow)'}));
-   bubble.append(svgEl('ellipse',{cx:-baseR*.28,cy:-baseR*.4,rx:baseR*.25,ry:baseR*.1,fill:'#fff',opacity:'.32',transform:'rotate(-22)'}));
-   bubble.append(svgEl('text',{'text-anchor':'middle',y:id.length>2?5:9,'font-size':id.length>=4?20:id.length>2?23:id.length>1?28:36,'font-weight':650,fill:color},id));
-  }
-  // A single tap opens the meaning and reveals the next branch together.
-  // Tapping the same word again collapses the detail and its descendants.
-  const activate=e=>{
-   e.stopPropagation();
-   const same=detailOpen&&selected===id;
-   if(currentMode==='expand'){
-    if(same){
-     detailOpen=false;
-     const prune=(word,seen=new Set())=>{
-      if(seen.has(word))return;seen.add(word);
-      if(word!==seed)openedBranches.delete(word);
-      (modeConfig.map[word]||[]).forEach(child=>prune(child,seen));
-     };
-     prune(id);
-    }else{
-     selected=id;detailOpen=true;
-     openedBranches.add(id);
-    }
-   }else{
-    if(same)detailOpen=false;
-    else{selected=id;detailOpen=true;}
-   }
-   draw();
-  };
-  group.addEventListener('click',activate);
-  group.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate(e)}});
-  world.append(group);
-  visualNodes.push({id,node:group,coords:coords[id],index:i,rx:isExpanded?(currentMode==='expand'?expandedW/2:expandedR):(currentMode==='expand'?baseW/2:baseR),ry:isExpanded?(currentMode==='expand'?expandedH/2:expandedR):(currentMode==='expand'?baseH/2:baseR)});
+ shadow.append(svgEl('feDropShadow',{dx:0,dy:8,stdDeviation:11,'flood-color':'#a9879c','flood-opacity':'.15'}));defs.append(shadow);scene.append(defs);
+ const measured={};
+ ids.forEach(id=>{const d=byId[id],active=detailOpen&&selected===id;
+  const meaningLines=wrapChars(d.th||'',d.englishFallback?24:17,3);
+  const sentence=(d.ex||'').split('—'),zh=wrapChars((sentence[0]||'').trim(),15,2),translation=wrapChars(sentence.slice(1).join('—').trim(),21,2);
+  const radius=active?Math.max(166,Math.min(228,145+meaningLines.length*12+((d.ex&& !isTree)?zh.length*11+translation.length*7:0))):Math.max(49, Math.min(85,38+[...id].length*16));
+  measured[id]={d,active,meaningLines,zh,translation,radius,rx:isTree?(active?Math.max(185,Math.min(255,125+[...id].length*13)):Math.max(62,32+[...id].length*18)):radius,ry:isTree?(active?Math.max(117,radius*.82):57):radius};
  });
- // Push nearby nodes away from the expanded bubble; never overlap the text.
- function placement(){
-  const positions={};
-  for(const n of visualNodes)positions[n.id]={x:n.coords.x,y:n.coords.y};
-  if(detailOpen){
-   const chosen=visualNodes.find(n=>n.id===selected);
-   if(chosen){
-    const center=positions[selected], minDist=chosen.rx+68;
-    for(const other of visualNodes){
-     if(other.id===selected)continue;
-     const p=positions[other.id];let dx=p.x-center.x,dy=p.y-center.y;
-     let distance=Math.hypot(dx,dy)||1;
-     const limit=minDist+other.rx;
-     if(distance<limit){const push=limit-distance+14;const nx=dx/distance,ny=dy/distance;p.x+=nx*push;p.y+=ny*push;}
-    }
-   }
-  }
-  return positions;
+ // Lay out bubbles with collision-aware radial placement; selected detail gets its own space.
+ const origin={x:0,y:0},pos={[seed]:{x:0,y:0}},rest=ids.filter(id=>id!==seed);
+ const n=rest.length;
+ if(isTree){
+  const columns={0:[seed]},depthMap={[seed]:0},q=[seed];
+  while(q.length){const x=q.shift();for(const [a,b] of edges)if(a===x&&depthMap[b]===undefined){depthMap[b]=depthMap[a]+1;(columns[depthMap[b]]??=[]).push(b);q.push(b)}}
+  const maxD=Math.max(1,...Object.values(depthMap));
+  Object.entries(columns).forEach(([depth,arr])=>arr.forEach((id,i)=>{const widest=Math.max(330,measured[seed].rx+measured[id].rx+75);pos[id]={x:Number(depth)*widest,y:(i-(arr.length-1)/2)*160}}));
+ }else{
+  let a=-Math.PI/2;
+  rest.forEach((id,i)=>{const prev=i?rest[i-1]:null;const sectors=n?Math.PI*2/n:0;
+   const minR=measured[seed].radius+measured[id].radius+90;
+   const R=Math.max(270,minR,n>6?330:275);
+   const angle=a+i*sectors;pos[id]={x:R*Math.cos(angle),y:R*Math.sin(angle)};
+  });
  }
- const target=placement();
- function tick(now){
-  const t=now/1000,positions={};
-  for(const n of visualNodes){
-   const waveX=Math.cos(t*.5+n.index*2)*5,waveY=Math.sin(t*.72+n.index*1.8)*7;
-   const p=target[n.id],x=p.x+waveX,y=p.y+waveY;
-   positions[n.id]={x,y};n.node.setAttribute('transform',`translate(${x} ${y})`);
+ if(detailOpen&&selected!==seed&&pos[selected]){
+  // Retain the chosen bubble in place, but shift neighbours aside.
+ }
+ // Global pairwise relaxation, including expanded bubble, no node overlap.
+ for(let k=0;k<100;k++){
+  let changes=0;
+  for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){
+   const ai=ids[i],bi=ids[j],a=pos[ai],b=pos[bi],ra=measured[ai],rb=measured[bi];
+   let dx=b.x-a.x,dy=b.y-a.y,dist=Math.hypot(dx,dy)||.1;
+   const required=Math.max(ra.rx+rb.rx+24,ra.ry+rb.ry+24);
+   // Elliptical collision detection handles capsule edges without over-spacing all directions.
+   const fx=dx/(ra.rx+rb.rx+30),fy=dy/(ra.ry+rb.ry+30),relative=Math.hypot(fx,fy);
+   if(relative>=1)continue;
+   const overlap=(1-relative)*Math.max(ra.rx+rb.rx,ra.ry+rb.ry)*.42+1;
+   const ux=dx/dist,uy=dy/dist;
+   if(ai===seed){b.x+=ux*overlap*2;b.y+=uy*overlap*2}
+   else if(bi===seed){a.x-=ux*overlap*2;a.y-=uy*overlap*2}
+   else {a.x-=ux*overlap;a.y-=uy*overlap;b.x+=ux*overlap;b.y+=uy*overlap}
+   changes++;
   }
-  for(const e of visualEdges){
-   const a=positions[e.a],b=positions[e.b];if(!a||!b)continue;
-   const na=visualNodes.find(n=>n.id===e.a),nb=visualNodes.find(n=>n.id===e.b);
-   const dx=b.x-a.x,dy=b.y-a.y,dist=Math.hypot(dx,dy)||1,ux=dx/dist,uy=dy/dist;
-   const x1=a.x+ux*na.rx,y1=a.y+uy*na.ry,x2=b.x-ux*nb.rx,y2=b.y-uy*nb.ry;
-   e.line.setAttribute('d',`M${x1} ${y1} C${x1+(x2-x1)*.42} ${y1},${x2-(x2-x1)*.42} ${y2},${x2} ${y2}`);
+  if(!changes)break;
+ }
+ const padding=75,extent={left:Infinity,right:-Infinity,top:Infinity,bottom:-Infinity};
+ ids.forEach(id=>{const p=pos[id],r=measured[id];extent.left=Math.min(extent.left,p.x-r.rx);extent.right=Math.max(extent.right,p.x+r.rx);extent.top=Math.min(extent.top,p.y-r.ry);extent.bottom=Math.max(extent.bottom,p.y+r.ry)});
+ const vw=Math.max(690,extent.right-extent.left+padding*2),vh=Math.max(560,extent.bottom-extent.top+padding*2);
+ const cx=(extent.left+extent.right)/2,cy=(extent.top+extent.bottom)/2;
+ svg.setAttribute('viewBox',`${cx-vw/2} ${cy-vh/2} ${vw} ${vh}`);
+ const world=svgEl('g',{transform:`translate(${panX} ${panY}) translate(${cx} ${cy}) scale(${scale}) translate(${-cx} ${-cy})`});scene.append(world);
+ visualEdges=[];visualNodes=[];
+ edges.forEach(([a,b])=>{const line=svgEl('path',{fill:'none',stroke:isTree?'#b1d9c5':currentMode==='build'?'#c9bbe4':'#e4bdd1','stroke-width':3,'stroke-linecap':'round',opacity:'.64'});world.append(line);visualEdges.push({a,b,line})});
+ ids.forEach((id,i)=>{
+  const m=measured[id],d=m.d,active=m.active,root=id===seed;
+  const color=isTree?'#517968':currentMode==='build'?'#79628d':'#7c556d';
+  const fill=active?'#fff5fa':(isTree?'#dff1e8':currentMode==='build'?'#e7e1f8':root?'#f3c5d8':'#f6dce7');
+  const group=svgEl('g',{role:'button',tabindex:'0','aria-label':id+' '+d.py+' '+d.th,style:'cursor:pointer'}),bubble=svgEl('g',{});
+  group.append(bubble);
+  if(isTree){bubble.append(svgEl('rect',{x:-m.rx,y:-m.ry,width:2*m.rx,height:2*m.ry,rx:m.ry,fill,stroke:'#fff','stroke-width':3,filter:'url(#softShadow)'}))}
+  else{bubble.append(svgEl('circle',{r:m.radius,fill,stroke:'#fff','stroke-width':3,filter:'url(#softShadow)'}))}
+  bubble.append(svgEl('ellipse',{cx:-m.rx*.24,cy:-m.ry*.55,rx:m.rx*.17,ry:Math.max(6,m.ry*.055),fill:'#fff',opacity:'.55',transform:`rotate(-23 ${-m.rx*.24} ${-m.ry*.55})`}));
+  if(active){
+   const lines=[{txt:id,size:[...id].length>4?32:53,weight:700,color,margin:8},{txt:d.py,size:23,weight:500,color:'#9b7891',margin:12},...m.meaningLines.map(t=>({txt:t,size:d.englishFallback?17:23,weight:550,color,margin:4}))];
+   if(!isTree&&d.ex){lines.push({txt:'',size:4,margin:4});m.zh.forEach(t=>lines.push({txt:t,size:19,weight:550,color,margin:4}));if(m.translation.join('').trim())m.translation.forEach(t=>lines.push({txt:t,size:17,weight:400,color:'#967b8b',margin:3}))}
+   const heights=lines.map(x=>x.size*1.28+(x.margin||0));const total=heights.reduce((a,b)=>a+b,0);let cursor=-total/2;
+   for(let k=0;k<lines.length;k++){const item=lines[k];cursor+=item.size*1.1;if(item.txt)bubble.append(svgEl('text',{'text-anchor':'middle',y:cursor,'dominant-baseline':'middle','font-size':item.size,'font-weight':item.weight||500,fill:item.color||color},item.txt));cursor+=item.size*.18+(item.margin||0)}
+  }else{bubble.append(svgEl('text',{'text-anchor':'middle','dominant-baseline':'middle',y:2,'font-size':id.length>4?23:id.length>2?27:id.length>1?34:41,'font-weight':650,fill:color},id))}
+  const activate=e=>{e.stopPropagation();const same=detailOpen&&selected===id;
+   if(isTree){if(same){detailOpen=false;const prune=(word,seen=new Set())=>{if(seen.has(word))return;seen.add(word);if(word!==seed)openedBranches.delete(word);(modeConfig.map[word]||[]).forEach(child=>prune(child,seen))};prune(id)}else{selected=id;detailOpen=true;openedBranches.add(id)}}
+   else if(same)detailOpen=false;else{selected=id;detailOpen=true}draw()};
+  group.addEventListener('click',activate);group.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activate(e)}});
+  world.append(group);visualNodes.push({id,node:group,rx:m.rx,ry:m.ry,index:i});
+ });
+ function tick(t){const clock=t/1000,positions={};
+  for(const n of visualNodes){const p=pos[n.id],x=p.x+Math.sin(clock*.46+n.index*1.8)*2.7,y=p.y+Math.cos(clock*.6+n.index*2.5)*3.8;positions[n.id]={x,y};n.node.setAttribute('transform',`translate(${x} ${y})`)}
+  for(const e of visualEdges){const a=positions[e.a],b=positions[e.b];if(!a||!b)continue;
+   const ra=measured[e.a],rb=measured[e.b],dx=b.x-a.x,dy=b.y-a.y,dist=Math.hypot(dx,dy)||1,ux=dx/dist,uy=dy/dist;
+   const ta=1/Math.hypot(ux/ra.rx,uy/ra.ry),tb=1/Math.hypot(ux/rb.rx,uy/rb.ry);
+   const x1=a.x+ux*(ta+5),y1=a.y+uy*(ta+5),x2=b.x-ux*(tb+5),y2=b.y-uy*(tb+5);
+   e.line.setAttribute('d',`M${x1} ${y1} C${x1+(x2-x1)*.43} ${y1},${x2-(x2-x1)*.43} ${y2},${x2} ${y2}`);
   }
-  if(!document.hidden)bubbleRAF=requestAnimationFrame(tick);
+  if(!document.hidden)bubbleRAF=requestAnimationFrame(tick)
  }
  bubbleRAF=requestAnimationFrame(tick);
 }
+function wrapChars(value,limit=15,max=3){const text=String(value||'').trim();if(!text)return [];const chunks=[];let chunk='';for(const ch of [...text]){chunk+=ch;if([...chunk].length>=limit){chunks.push(chunk);chunk=''}}if(chunk)chunks.push(chunk);if(chunks.length>max){const final=chunks.slice(0,max);final[max-1]=final[max-1].slice(0,-1)+'…';return final}return chunks}
 function zoom(f){scale=Math.max(.65,Math.min(2.4,scale*f));draw()};$('plus').onclick=()=>zoom(1.2);$('minus').onclick=()=>zoom(1/1.2);$('reset').onclick=()=>{scale=1;panX=0;panY=0;draw()};let dragging=false,sx=0,sy=0;const viz=$('viz');viz.addEventListener('pointerdown',e=>{if(e.target.closest('[role="button"]'))return;dragging=true;sx=e.clientX;sy=e.clientY;viz.setPointerCapture(e.pointerId)});viz.addEventListener('pointermove',e=>{if(!dragging)return;const rect=viz.getBoundingClientRect();panX+=(e.clientX-sx)*(viz.viewBox.baseVal.width)/rect.width;panY+=(e.clientY-sy)*520/rect.height;sx=e.clientX;sy=e.clientY;draw()});viz.addEventListener('pointerup',()=>dragging=false);viz.addEventListener('pointercancel',()=>dragging=false);viz.addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY<0?1.08:.92)},{passive:false});
+
+// ---------------- Module 02: curated visual breakdowns ----------------
+// Shapes are memory aids; component meanings should not be mistaken for historical etymology.
+const BREAKDOWNS=[
+ {id:'望',py:'wàng',th:'มองไกล / คาดหวัง',parts:[['亡','wáng','สูญหาย'],['月','yuè','พระจันทร์'],['王','wáng','กษัตริย์']],related:['希望','失望','愿望','盼望'],note:'ตัวช่วยจำรูปอักษรแบบ 亡 + 月 + 王 ไม่ใช่การวิเคราะห์นิรุกติศาสตร์'},
+ {id:'明',py:'míng',th:'สว่าง / ชัดเจน',parts:[['日','rì','ดวงอาทิตย์'],['月','yuè','พระจันทร์']],related:['明天','明白','说明'],note:'โครงสร้างซ้าย–ขวา ใช้สองส่วนประกอบ'},
+ {id:'好',py:'hǎo',th:'ดี',parts:[['女','nǚ','ผู้หญิง'],['子','zǐ','ลูก / เด็ก']],related:['你好','好吃','好看'],note:'โครงสร้างซ้าย–ขวา ใช้สองส่วนประกอบ'},
+ {id:'林',py:'lín',th:'ป่า / กลุ่มต้นไม้',parts:[['木','mù','ต้นไม้'],['木','mù','ต้นไม้']],related:['森林','树林'],note:'โครงสร้างซ้าย–ขวา มี 木 สองตัว'},
+ {id:'休',py:'xiū',th:'พักผ่อน',parts:[['亻','rén','คน (รูปย่อ)'],['木','mù','ต้นไม้']],related:['休息','休假'],note:'โครงสร้างซ้าย–ขวา'},
+ {id:'想',py:'xiǎng',th:'คิด / อยาก',parts:[['相','xiāng','กันและกัน / รูปลักษณ์'],['心','xīn','หัวใจ / ใจ']],related:['想法','想念','理想'],note:'โครงสร้างบน–ล่าง'},
+ {id:'朋',py:'péng',th:'เพื่อน (มักใช้ในคำประสม)',parts:[['月','yuè','รูปส่วนประกอบด้านซ้าย'],['月','yuè','รูปส่วนประกอบด้านขวา']],related:['朋友'],note:'รูปอักษรประกอบด้วยส่วนที่ดูคล้าย 月 สองส่วน ไม่ใช่การอธิบายนิรุกติศาสตร์'},
+ {id:'河',py:'hé',th:'แม่น้ำ',parts:[['氵','shuǐ','ส่วนประกอบเกี่ยวกับน้ำ'],['可','kě','สามารถ / ได้']],related:['河流','河边'],note:'โครงสร้างซ้าย–ขวา'}
+];
+const BREAK_WORDS={
+ '希望':['xīwàng','หวัง / ความหวัง'], '失望':['shīwàng','ผิดหวัง'], '愿望':['yuànwàng','ความปรารถนา'],'盼望':['pànwàng','เฝ้ารอ / หวังอย่างใจจดใจจ่อ'],
+ '明天':['míngtiān','พรุ่งนี้'],'明白':['míngbai','เข้าใจ'],'说明':['shuōmíng','อธิบาย'],'你好':['nǐ hǎo','สวัสดี'], '好吃':['hǎochī','อร่อย'], '好看':['hǎokàn','ดูดี / สวย'],
+ '森林':['sēnlín','ป่าไม้'],'树林':['shùlín','ป่าละเมาะ'],'休息':['xiūxi','พักผ่อน'],'休假':['xiūjià','ลาพัก'],'想法':['xiǎngfǎ','ความคิด'],'想念':['xiǎngniàn','คิดถึง'],'理想':['lǐxiǎng','อุดมคติ / ความใฝ่ฝัน'],'朋友':['péngyou','เพื่อน'],'河流':['héliú','แม่น้ำ / กระแสน้ำ'],'河边':['hébiān','ริมแม่น้ำ']
+};
+function closeSideScreens(){$('picker').classList.add('hidden');$('viewer').classList.add('hidden');$('breakdown-screen').classList.add('hidden');$('practice-screen').classList.add('hidden')}
+function showBreakdown(){document.body.classList.add('in-module');closeSideScreens();$('breakdown-screen').classList.remove('hidden');const sel=$('break-target');if(!sel.options.length){BREAKDOWNS.forEach(x=>{const o=document.createElement('option');o.value=x.id;o.textContent=x.id+' · '+x.py;sel.append(o)});sel.addEventListener('change',()=>renderBreakdown(sel.value))}renderBreakdown(sel.value||'望');window.scrollTo(0,0)}
+function renderBreakdown(id){const d=BREAKDOWNS.find(x=>x.id===id)||BREAKDOWNS[0],where=$('break-content');where.replaceChildren();const panel=document.createElement('div');panel.className='break-panel';
+ const row=document.createElement('div');row.className='break-component-row';
+ d.parts.forEach((part,i)=>{if(i){const plus=document.createElement('span');plus.className='break-plus';plus.textContent='+';row.append(plus)}
+  const btn=document.createElement('button');btn.type='button';btn.className='break-component';btn.setAttribute('aria-label',part.join(' '));
+  for(const [cls,value] of [['break-hanzi',part[0]],['break-pinyin',part[1]],['break-meaning',part[2]]]){const a=document.createElement('span');a.className=cls;a.textContent=value;btn.append(a)}
+  btn.onclick=()=>{$('component-info').textContent=part[0]+' · '+part[1]+' — '+part[2]};row.append(btn)});panel.append(row);
+ const info=document.createElement('div');info.id='component-info';info.className='break-component-info';info.textContent='แตะส่วนประกอบเพื่อดูพินอินและความหมาย';panel.append(info);
+ const arrow=document.createElement('div');arrow.className='break-arrow';arrow.textContent='↓';panel.append(arrow);
+ const result=document.createElement('div');result.className='break-result';for(const [cls,value] of [['break-hanzi',d.id],['break-pinyin',d.py],['break-meaning',d.th]]){const x=document.createElement('span');x.className=cls;x.textContent=value;result.append(x)}panel.append(result);
+ const note=document.createElement('p');note.className='break-note';note.textContent=d.note;panel.append(note);
+ const title=document.createElement('p');title.className='break-word-heading';title.textContent='ต่อยอดเป็นคำศัพท์';panel.append(title);
+ const related=document.createElement('div');related.className='break-related';d.related.forEach(word=>{const data=BREAK_WORDS[word]||[byId[word]?.py||'',byId[word]?.th||''],b=document.createElement('button');b.type='button';b.textContent=word;const a=document.createElement('small');a.textContent=data[0]+' · '+data[1];b.append(a);b.onclick=()=>{selectMode('build');if(byId[d.id])openGraph(d.id);else{$('query').value=word;list()}};related.append(b)});panel.append(related);
+ const action=document.createElement('button');action.type='button';action.className='break-action';action.textContent='ไป Vocabulary Builder →';action.onclick=()=>{selectMode('build');$('query').value=d.id;list();if(byId[d.id] && (build[d.id]||[]).length)openGraph(d.id)};panel.append(action);
+ where.append(panel)
+}
+$('break-home').onclick=()=>{document.body.classList.remove('in-module');closeSideScreens()};
+// ---------------- Module 05: practice with existing curated data ----------------
+const PRACTICE_TYPES=[['meaning','จับคู่ความหมาย'],['character','จำตัวอักษร'],['assemble','ประกอบอักษร'],['sentence','เติมคำในประโยค'],['review','ทบทวนคำ']];
+const PRACTICE_Q={
+ meaning:[{question:'希望',answer:'หวัง / ความหวัง',opts:['หวัง / ความหวัง','เพื่อน','ผิดหวัง','พักผ่อน']},{question:'朋友',answer:'เพื่อน',opts:['สวัสดี','เพื่อน','เวลา','เรียน']},{question:'休息',answer:'พักผ่อน',opts:['มองไกล','พักผ่อน','แม่น้ำ','สว่าง']}],
+ character:[{question:'xīwàng — ความหวัง',answer:'希望',opts:['希望','朋友','失望','明天']},{question:'péngyou — เพื่อน',answer:'朋友',opts:['望月','朋友','休息','河流']}],
+ assemble:[{question:'亡 + 月 + 王 = ?',answer:'望',opts:['明','朋','望','休']},{question:'日 + 月 = ?',answer:'明',opts:['明','朋','林','想']},{question:'女 + 子 = ?',answer:'好',opts:['你','好','妈','林']}],
+ sentence:[{question:'我___你每天都开心。',answer:'希望',opts:['希望','朋友','河流','休息']},{question:'我有一个好___。',answer:'朋友',opts:['朋友','森林','明天','失望']},{question:'今天很累，我想___。',answer:'休息',opts:['明白','希望','休息','说明']}],
+ review:[]
+};
+let practiceType='meaning',practiceIndex=0,practiceIncorrect=[],practiceAnswered=false;
+function showPractice(){document.body.classList.add('in-module');closeSideScreens();$('practice-screen').classList.remove('hidden');practiceType='meaning';practiceIndex=0;renderPracticeTabs();renderPractice();window.scrollTo(0,0)}
+function renderPracticeTabs(){const tabs=$('practice-tabs');tabs.replaceChildren();PRACTICE_TYPES.forEach(([id,name])=>{const b=document.createElement('button');b.type='button';b.textContent=name;b.className=id===practiceType?'active':'';b.onclick=()=>{practiceType=id;practiceIndex=0;renderPracticeTabs();renderPractice()};tabs.append(b)})}
+function renderPractice(){const holder=$('practice-content');holder.replaceChildren();const questions=practiceType==='review'?practiceIncorrect:PRACTICE_Q[practiceType];const p=document.createElement('div');p.className='practice-panel';holder.append(p);if(!questions.length){p.textContent=practiceType==='review'?'ยังไม่มีคำที่ตอบผิดในรอบนี้':'ยังไม่มีโจทย์';return}
+ const q=questions[practiceIndex%questions.length],heading=document.createElement('div');heading.className='practice-prompt';heading.textContent=(practiceIndex%questions.length+1)+' / '+questions.length+' · เลือกคำตอบที่ถูกต้อง';p.append(heading);
+ const title=document.createElement('div');title.className='practice-word';title.textContent=q.question;p.append(title);
+ const options=document.createElement('div');options.className='practice-options';const feedback=document.createElement('div');feedback.className='practice-feedback';let answered=false;
+ q.opts.forEach(answer=>{const b=document.createElement('button');b.type='button';b.textContent=answer;b.onclick=()=>{if(answered)return;answered=true;options.querySelectorAll('button').forEach(el=>{el.disabled=true;if(el.textContent===q.answer)el.classList.add('correct');else if(el===b)el.classList.add('incorrect')});feedback.textContent=answer===q.answer?'ถูกต้องแล้ว':'คำตอบที่ถูกคือ '+q.answer;if(answer!==q.answer&&!practiceIncorrect.some(x=>x.question===q.question))practiceIncorrect.push(q);next.disabled=false};options.append(b)});p.append(options);p.append(feedback);
+ const next=document.createElement('button');next.className='practice-next';next.textContent='ข้อต่อไป →';next.disabled=true;next.onclick=()=>{practiceIndex++;renderPractice()};p.append(next)
+}
+$('practice-home').onclick=()=>{document.body.classList.remove('in-module');closeSideScreens()};
 </script></body></html>
