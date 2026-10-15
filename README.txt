@@ -1,6 +1,3 @@
-Farm จีน 干嘛？ v25 — UI prototype built from farm-jeen-relations-v22.zip
-Open index.html. 5 modules: Character Family, Character Breakdown, Vocabulary Builder, Word Expansion Tree, Practice & Review.
-HSK level: Beginner (HSK1–3), Intermediate (HSK4–6), Advanced reserved (HSK7–9 not yet imported).
-HSK 1–6 word list loads online; offline only curated starter examples. No claim of complete Thai meanings or sentences.
-Character Breakdown: eight curated illustrations, presented as visual mnemonics, NOT etymology.
-Practice: curated demo questions; not yet generated dynamically from master vocabulary database.
+Farm จีน 干嘛？ v26 — Floating Bubble Graph
+เปิด index.html ได้ทันที ใช้อินเทอร์เน็ตสำหรับ HSK data ที่เว็บเดิมโหลดภายนอก
+Change: organic floating motion, dynamic collision avoidance and live curve connections in existing graph. All 5 modules and vocab logic preserved.
