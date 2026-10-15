@@ -100,8 +100,8 @@ body.in-module .shell{max-width:680px;padding:14px 18px 45px}
 #module-area .graph-head h2{font-size:24px;font-weight:780;color:#704d64}
 #module-area .graph-head p{font-size:12px;color:#ae92a2;margin:5px 0 0}
 #module-area .graph{height:min(67vh,620px);min-height:430px;border:0;border-radius:34px;background:radial-gradient(circle at 49% 37%,#fffafc 0%,#fff6fa 53%,#f9f5fd 100%);box-shadow:inset 0 0 0 1px #f5eaf0;overflow:hidden}
-#module-area .graph::before{content:'';pointer-events:none;position:absolute;width:300px;height:300px;border:1px solid #ead6e6;border-radius:50%;top:11%;left:calc(50% - 150px);opacity:.65}
-#module-area .graph::after{content:'';pointer-events:none;position:absolute;width:400px;height:400px;border:1px dashed #ecdce9;border-radius:50%;top:0;left:calc(50% - 200px);opacity:.45}
+#module-area .graph::before{display:none;content:'';pointer-events:none;position:absolute;width:300px;height:300px;border:1px solid #ead6e6;border-radius:50%;top:11%;left:calc(50% - 150px);opacity:.65}
+#module-area .graph::after{display:none;content:'';pointer-events:none;position:absolute;width:400px;height:400px;border:1px dashed #ecdce9;border-radius:50%;top:0;left:calc(50% - 200px);opacity:.45}
 #module-area .graph svg{position:relative;z-index:1;display:block}
 #module-area .controls{z-index:3;right:14px;bottom:14px;top:auto;flex-direction:row}
 #module-area .controls button{background:#ffffffdc;border:1px solid #f0e2eb;border-radius:50%;width:39px;height:39px;box-shadow:0 2px 13px #a7899c12;color:#8e6a7e}
@@ -161,6 +161,10 @@ body.in-module .shell{max-width:680px;padding:14px 18px 45px}
 #module-area .level-help{line-height:1.6;margin:0 0 16px;font-size:12px}
 #module-area .word .thai{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 #module-area .words{max-height:none}
+</style><style id="relation-v22">
+#module-area .graph::before,#module-area .graph::after{display:none!important}
+#module-area .graph{background:radial-gradient(circle at 50% 40%,#fffafd,#f9f4fb)!important}
+#module-area .level-help{line-height:1.65}
 </style></head><body><div class="shell"><main class="new-home" id="home">
 <section aria-label="ชื่อแพลตฟอร์ม" class="home-heading">
 <div class="mini-wordmark">interactive chinese vocabulary</div>
@@ -182,42 +186,90 @@ const family={"口":["吃","喝","叫","吗","唱","听"],"木":["林","森","�
 const build={"你":["你好","你们","你好吗？"],"们":["你们","我们","他们"],"我":["我们"],"他":["他们"],"朋":["朋友"],"友":["朋友"],"手":["手机","手机壳"],"机":["手机"],"电":["电话","电脑"],"脑":["电脑"],"话":["电话","说话","普通话"],"打":["打电话"],"喝":["喝水","喝茶"],"茶":["喝茶"],"唱":["唱歌"],"森":["森林"],"林":["森林"],"学":["学习","学生"],"生":["学生"],"说":["说中文","说话"],"工":["工作","工作日"],"作":["工作","工作日"],"休":["休息"],"时":["时间"],"明":["明天"],"心":["开心","心情"],"请":["请问"],"会":["会议","开会"],"开":["开会"],"议":["会议"],"项":["项目"],"目":["项目"],"计":["计划"],"划":["计划"],"预":["预算"],"算":["预算"],"市":["市场"],"转":["转化","转化率"],"化":["转化","转化率"],"率":["效率","转化率"],"策":["策略"],"略":["策略"]};
 const expand={"你":["你好","你们"],"你好":["你好吗？"],"你们":["你们好"],"我":["我们"],"手":["手机"],"手机":["手机壳"],"电":["电话","电脑"],"打":["打电话"],"喝":["喝水","喝茶"],"唱":["唱歌"],"森":["森林"],"学":["学习","学生"],"说":["说中文","说话"],"说中文":["我会说中文"],"工作":["工作日","工作效率"],"休息":["休息一下"],"时间":["有时间","确认时间"],"有时间":["你有时间吗？"],"明天":["明天见"],"心":["心情"],"心情":["心情很好"],"请问":["请问一下"],"会议":["开会时间"],"开会":["开会时间"],"确认":["确认时间"],"项目":["项目进度"],"计划":["营销计划"],"预算":["营销预算"],"市场":["市场分析"],"客户":["客户反馈"],"品牌":["品牌策略"],"营销":["数字营销","营销计划","营销预算"],"数据":["数据分析"],"转化":["转化率"],"转化率":["转化率分析"],"效率":["工作效率"],"策略":["策略调整"]};
 
+// Teaching-first additions: reviewed example links (component ≠ necessarily semantic radical).
+const pedagogic=[
+ ['月','yuè','พระจันทร์ / เดือน'],['朋','péng','เพื่อน (ใช้ใน 朋友)'],['望','wàng','มอง / หวัง'],['朋友','péngyou','เพื่อน'],['希望','xīwàng','ความหวัง / หวังว่า'],
+ ['只','zhǐ','เพียง / แค่'],['只是','zhǐshì','เพียงแต่'],['只有','zhǐyǒu','มีเพียง / เท่านั้น'],['只能','zhǐnéng','ทำได้เพียง'],['只要','zhǐyào','ขอเพียง'],
+ ['灯','dēng','โคมไฟ / ไฟ'],['电灯','diàndēng','หลอดไฟ / ไฟฟ้า'],['台灯','táidēng','โคมไฟตั้งโต๊ะ'],['灯光','dēngguāng','แสงไฟ'],['红绿灯','hónglǜdēng','สัญญาณไฟจราจร'],
+ ['没','méi','ไม่ / ยังไม่'],['水','shuǐ','น้ำ'],['海','hǎi','ทะเล'],['河','hé','แม่น้ำ'],['洗','xǐ','ล้าง / ซัก'],['海边','hǎibiān','ริมทะเล'],
+ ['心','xīn','หัวใจ / จิตใจ'],['情','qíng','ความรู้สึก / อารมณ์'],['想','xiǎng','คิด / คิดถึง'],['息','xī','การพัก / ลมหายใจ'],
+ ['电','diàn','ไฟฟ้า'],['工','gōng','งาน'],['作','zuò','ทำ'],['你好','nǐ hǎo','สวัสดี']
+];
+for(const [id,py,th] of pedagogic){
+ const original=D.find(x=>x.id===id);
+ if(original){ original.th=th;original.py=py;original.englishFallback=false; }
+ else D.push({id,py,th,kind:id.length===1?'char':'word',level:1,levelOverride:true,ex:''});
+}
 const byId=Object.fromEntries(D.map(d=>[d.id,d]));
+// Explicit visual components. This is a curated teaching aid, NOT an etymology claim.
+const VISUAL_COMPONENTS={
+ '月':['朋','望','明','服','期','有','青','朝'],
+ '氵':['没','洗','河','海','活','法','清','江','湖','洋','游'],
+ '口':['吃','喝','叫','吗','唱','听','品','哭'],
+ '木':['林','森','树','校','杯','桌','机'],
+ '女':['好','妈','她','姐','妹','姓'],
+ '亻':['你','他','们','住','休','做','什','件'],
+ '日':['明','时','晚','早','星','昨'],
+ '心':['想','息','思','忘','念'],
+ '讠':['请','说','语','话','讲','读'],
+ '扌':['打','找','提','把','抱','推'],
+ '艹':['花','茶','药','草','菜','英']
+};
+const CURATED_EXPANSIONS={
+ '只':['只是','只有','只能','只要'],
+ '灯':['电灯','台灯','灯光','红绿灯'],
+ '朋':['朋友'],'望':['希望'],
+ '海':['海边'], '月':['月亮','月光','月份','月饼'],
+ '电':['电灯','电话','电脑']
+};
+
 // HSK 2.0 (six-level) data source: drkameleon/complete-hsk-vocabulary (MIT).
 // Online loading required for the full ~5,000-item library. Curated entries remain available offline.
 const HSK_SOURCE='https://raw.githubusercontent.com/drkameleon/complete-hsk-vocabulary/main/wordlists/exclusive/old/';
 let hskLoaded=false, hskLoading=false, hskAvailable=false;
 const trimEnglish=s=>String(s||'').split(';')[0].trim().slice(0,110);
 function createHskLinks(){
- const byLevel={};for(let i=1;i<=6;i++)byLevel[i]=[];
- D.forEach(d=>{if(d.hskLevel&&byLevel[d.hskLevel])byLevel[d.hskLevel].push(d)});
- // Character Family uses radicals as starting points, not unrelated words.
- for(const [k,v] of Object.entries(family)){family[k]=[...new Set(v)].filter(x=>byId[x])}
- for(const d of D){
-  if(!d.hskLevel)continue;
-  if(d.radical && d.id!==d.radical && byId[d.radical] && [...d.id].length===1){
-   if(!family[d.radical])family[d.radical]=[];
-   if(!family[d.radical].includes(d.id))family[d.radical].push(d.id);
-  }
-  const chars=[...d.id];
-  if(chars.length>=2 && chars.length<=5){
-   for(const c of new Set(chars)){
-    if(!byId[c]||c===d.id)continue;
-    if(!build[c])build[c]=[];
-    if(!build[c].includes(d.id))build[c].push(d.id);
-   }
-   // Only valid attested vocabulary words, no fabricated expressions.
-   for(let n=1;n<chars.length;n++){
-    const prefix=chars.slice(0,n).join('');
-    if(!byId[prefix])continue;
-    if(!expand[prefix])expand[prefix]=[];
-    if(!expand[prefix].includes(d.id))expand[prefix].push(d.id);
-   }
-  }
+ // Build relationships from structured graph types, not a single substring heuristic.
+ for(const [component,chars] of Object.entries(VISUAL_COMPONENTS)){
+   if(!byId[component])continue;
+   family[component]=[...new Set([...(family[component]||[]),...chars])].filter(x=>byId[x]&&x!==component);
  }
- // Sort lexical neighbors by short length then level and restrict rendered branches below.
- for(const m of [family,build,expand])for(const k of Object.keys(m))m[k]=[...new Set(m[k])].filter(x=>byId[x]).sort((a,b)=>a.length-b.length||(byId[a].hskLevel||1)-(byId[b].hskLevel||1));
+ for(const [word,next] of Object.entries(CURATED_EXPANSIONS)){
+   expand[word]=[...new Set([...(expand[word]||[]),...next])].filter(x=>byId[x]&&x!==word);
+ }
+ for(const d of D){
+   if(d.radical && d.id!==d.radical && byId[d.radical] && Array.from(d.id).length===1){
+     if(!family[d.radical])family[d.radical]=[];
+     family[d.radical].push(d.id);
+   }
+   const chars=Array.from(d.id);
+   if(chars.length<2||chars.length>7)continue;
+   // Word building: link actual attested characters to their full words.
+   for(const c of new Set(chars)){
+     if(!byId[c])continue;
+     (build[c]??=[]).push(d.id);
+   }
+   // Expansion: allow extending to either side of the existing word.
+   // Examples: 灯→电灯, 台灯; 只→只是, 只有.
+   // Only attested entries are linked; never construct imaginary words.
+   for(let width=1;width<chars.length;width++){
+     for(let at=0;at+width<=chars.length;at++){
+       const part=chars.slice(at,at+width).join('');
+       if(!byId[part])continue;
+       (expand[part]??=[]).push(d.id);
+     }
+   }
+ }
+ for(const m of [family,build,expand])for(const key of Object.keys(m)){
+  m[key]=[...new Set(m[key])].filter(x=>byId[x]&&x!==key).sort((a,b)=>{
+   const aCurated=(CURATED_EXPANSIONS[key]||VISUAL_COMPONENTS[key]||[]).includes(a)?0:1;
+   const bCurated=(CURATED_EXPANSIONS[key]||VISUAL_COMPONENTS[key]||[]).includes(b)?0:1;
+   return aCurated-bCurated||a.length-b.length||(byId[a].hskLevel||7)-(byId[b].hskLevel||7);
+  });
+ }
 }
+// Build curated links before the async HSK request completes, too.
+createHskLinks();
 async function loadHSK(){
  if(hskLoaded||hskLoading)return;
  hskLoading=true;
@@ -235,7 +287,7 @@ async function loadHSK(){
    D.push(d);byId[id]=d;
   }));
   hskLoaded=true;hskAvailable=true;createHskLinks();
-  if(help)help.textContent='แสดงเฉพาะศัพท์ของ HSK ระดับที่เลือก · รายการคำแปลไทยที่ยังไม่ตรวจทานจะแสดงความหมายอังกฤษแทน';
+  if(help)help.textContent='เลือกคำตั้งต้นที่มีความสัมพันธ์ · กราฟอาจแสดงศัพท์ข้ามระดับเพื่อเชื่อมคำ · EN หมายถึงคำที่รอตรวจแปลไทย';
  }catch(err){
   hskAvailable=false;
   if(help)help.textContent='ยังโหลดคลัง HSK ออนไลน์ไม่ได้ — แสดงเฉพาะศัพท์ตัวอย่างที่อยู่ในไฟล์';
@@ -254,13 +306,49 @@ function selectMode(m){loadHSK();currentMode=m;modeConfig=configs[m];seeds=Objec
 document.querySelectorAll('#home .tile').forEach(b=>b.onclick=()=>selectMode(b.dataset.mode));
 $('to-home').onclick=()=>{document.body.classList.remove('in-module');$('viewer').classList.add('hidden');$('picker').classList.remove('hidden');window.scrollTo(0,0)};
 
-function list(){const q=$('query').value.trim();const search=q.trim();const results=seeds.map(s=>byId[s]).filter(d=>{if(!d)return false;if(!found(d,search))return false;if(!hskAvailable)return (d.level||1)===Math.min(currentLevel,3);if(currentMode==='expand')return d.hskLevel===currentLevel;if(currentMode==='family')return (modeConfig.map[d.id]||[]).some(id=>byId[id]?.hskLevel===currentLevel);return (modeConfig.map[d.id]||[]).some(id=>byId[id]?.hskLevel===currentLevel);}).slice(0,400);$('count').textContent=`${results.length} รายการเริ่มต้น · HSK ${currentLevel}${hskAvailable?'':' (ข้อมูลทดลอง)'}`;$('words').innerHTML='';results.forEach(d=>{const b=document.createElement('button');b.className='word';b.type='button';b.innerHTML=`<div class="han"></div><div class="pinyin"></div><div class="thai"></div>`;b.children[0].textContent=d.id;b.children[1].textContent=d.py;b.children[2].textContent=(d.englishFallback?'EN · ':'')+d.th;b.setAttribute('aria-label',d.id+' '+d.py+' '+d.th);b.onclick=()=>openGraph(d.id);$('words').append(b)});if(!results.length){const p=document.createElement('p');p.className='empty';p.textContent='ไม่พบคำตั้งต้นในโมดูลนี้ ลองค้นอีกคำ';$('words').append(p)}}
+function list(){
+ const q=$('query').value.trim();
+ const allStarts=Object.keys(modeConfig.map).filter(k=>byId[k]&&(modeConfig.map[k]||[]).some(x=>byId[x]));
+ const matching=allStarts.filter(id=>{
+  const d=byId[id];if(!found(d,q))return false;
+  if(q && d.id.includes(q))return true;
+  if(!hskAvailable)return true;
+  if(currentMode==='family')return (modeConfig.map[id]||[]).some(x=>byId[x]?.hskLevel===currentLevel);
+  if(d.hskLevel===currentLevel)return true;
+  // Search may find a root from an earlier level which leads into selected HSK level.
+  return (modeConfig.map[id]||[]).some(x=>byId[x]?.hskLevel===currentLevel);
+ });
+ const results=matching.slice(0,450);
+ $('count').textContent=`${matching.length} คำที่มีความเชื่อมโยง · HSK ${currentLevel}${hskAvailable?'':' (ข้อมูลทดลอง)'}`;
+ $('words').replaceChildren();
+ results.forEach(id=>{const d=byId[id],b=document.createElement('button');b.className='word';b.type='button';b.innerHTML='<div class="han"></div><div class="pinyin"></div><div class="thai"></div>';
+ b.children[0].textContent=d.id;b.children[1].textContent=d.py;
+ b.children[2].textContent=(d.englishFallback?'EN · ':'')+d.th;
+ b.setAttribute('aria-label',d.id+' '+d.py+' '+d.th);b.onclick=()=>openGraph(d.id);$('words').append(b)});
+ if(!results.length){const p=document.createElement('p');p.className='empty';p.textContent='ยังไม่มีความเชื่อมโยงที่ตรวจพบในระดับนี้ ลองค้นคำอื่นหรือเปลี่ยน HSK';$('words').append(p)}
+}
 document.querySelectorAll('.level-option').forEach(b=>b.addEventListener('click',()=>{currentLevel=Number(b.dataset.level);document.querySelectorAll('.level-option').forEach(x=>x.classList.toggle('active',x===b));list()}));
 $('query').addEventListener('input',list);list();
 let seed='',selected='',scale=1,panX=0,panY=0,detailOpen=false;let openedBranches=new Set();let bubbleRAF=0;let visualNodes=[],visualEdges=[];
-function openGraph(id){seed=id;selected=id;detailOpen=false;openedBranches=new Set([id]);scale=1;panX=0;panY=0;$('picker').classList.add('hidden');$('viewer').classList.remove('hidden');$('graph-title').textContent=`${id} · ${byId[id].th}`;const tip=document.querySelector('#viewer .graph-hint');if(tip&&currentMode==='expand')tip.textContent='แตะคำเพื่อดูความหมายและต่อยอด · แตะซ้ำเพื่อยุบ';draw();window.scrollTo(0,0)}
+function openGraph(id){seed=id;selected=id;detailOpen=false;openedBranches=new Set([id]);scale=1;panX=0;panY=0;$('picker').classList.add('hidden');$('viewer').classList.remove('hidden');$('graph-title').textContent=byId[id].englishFallback?id:`${id} · ${byId[id].th}`;const tip=document.querySelector('#viewer .graph-hint');if(tip&&currentMode==='expand')tip.textContent='แตะคำเพื่อดูความหมายและขยายกิ่ง · แตะซ้ำเพื่อยุบ';draw();window.scrollTo(0,0)}
 $('back-list').onclick=()=>{$('viewer').classList.add('hidden');$('picker').classList.remove('hidden');detailOpen=false;cancelAnimationFrame(bubbleRAF);window.scrollTo(0,0)};
-function paths(){let edges=[],seen=new Set([seed]),queue=[{id:seed,depth:0}];while(queue.length){let {id,depth}=queue.shift();if(depth>=4)continue;if(currentMode==='expand'&&!openedBranches.has(id))continue;for(const to of (modeConfig.map[id]||[]).filter(x=>byId[x]&&(!hskAvailable||!byId[x].hskLevel||byId[x].hskLevel<=currentLevel)).slice(0,9)){if(!byId[to]||(hskAvailable&&byId[to].hskLevel?byId[to].hskLevel>currentLevel:(byId[to].level||1)>Math.min(currentLevel,3)))continue;edges.push([id,to]);if(!seen.has(to)){seen.add(to);queue.push({id:to,depth:depth+1})}}}return {edges,ids:[...seen]}}
+function paths(){
+ const edges=[],seen=new Set([seed]),queue=[{id:seed,depth:0}];
+ while(queue.length){
+  const {id,depth}=queue.shift();if(depth>=(currentMode==='expand'?3:1)||seen.size>=22)continue;
+  if(currentMode==='expand'&&!openedBranches.has(id))continue;
+  const candidates=(modeConfig.map[id]||[]).filter(x=>byId[x]);
+  // Prefer matches at the selected level, but don't hide valid structural links.
+  const selected=candidates.filter(x=>byId[x].hskLevel===currentLevel);
+  const rest=candidates.filter(x=>byId[x].hskLevel!==currentLevel);
+  const ordered=[...selected,...rest];
+  for(const to of ordered.slice(0,depth===0?8:4)){
+   if(to===id||seen.has(to))continue;
+   edges.push([id,to]);seen.add(to);queue.push({id:to,depth:depth+1});
+  }
+ }
+ return {edges,ids:[...seen]};
+}
 function svgEl(tag,attrs={},value){let el=document.createElementNS('http://www.w3.org/2000/svg',tag);Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));if(value!==undefined)el.textContent=value;return el}
 
 // In-place expansion: the selected graph node grows, while neighbours move away.
@@ -318,12 +406,12 @@ function draw(){
    if(currentMode==='expand'){
     bubble.append(svgEl('text',{'text-anchor':'middle',y:-28,'font-size':d.id.length>5?23:31,'font-weight':700,fill:color},id));
     bubble.append(svgEl('text',{'text-anchor':'middle',y:2,'font-size':17,fill:'#789c89'},d.py));
-    textLines(bubble,linesOf(d.th,16,2),30,16,color,20,550);
+    textLines(bubble,linesOf(d.th,d.englishFallback?24:16,2),30,d.englishFallback?12:16,color,17,550);
    }else{
     bubble.append(svgEl('text',{'text-anchor':'middle',y:-63,'font-size':d.id.length>5?22:30,'font-weight':700,fill:color},id));
     bubble.append(svgEl('text',{'text-anchor':'middle',y:-38,'font-size':16,fill:'#9f7895'},d.py));
-    textLines(bubble,linesOf(d.th,15,2),-14,15,color,17,600);
-    bubble.append(svgEl('line',{x1:-80,x2:80,y1:20,y2:20,stroke:'#e8cfdf','stroke-width':1.3}));
+    textLines(bubble,linesOf(d.th,d.englishFallback?23:15,2),-14,d.englishFallback?12:15,color,16,600);
+    if(d.ex)bubble.append(svgEl('line',{x1:-80,x2:80,y1:20,y2:20,stroke:'#e8cfdf','stroke-width':1.3}));
     const parts=(d.ex||'').split('—');
     const zh=linesOf((parts[0]||'').trim(),12,2),th=linesOf(parts.slice(1).join('—').trim(),17,2);
     textLines(bubble,zh,45,13,color,16,550);

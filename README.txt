@@ -1,0 +1,1 @@
+Farm จีน 干嘛？ v2.2 — HSK 1–6 online vocabulary (MIT source: drkameleon/complete-hsk-vocabulary). Curated Thai examples included; other Thai translations pending review. Graph logic: curated visual components, character-to-word, substring attested expansion. Network required for full HSK list.
